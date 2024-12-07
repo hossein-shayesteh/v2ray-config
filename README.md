@@ -1,17 +1,17 @@
-# V2Ray Subscription Links Repository
+# V2Ray Subscription Links
 
-This repository contains a centralized list of V2Ray subscription links for easy configuration of V2Ray clients, such as **v2rayNG** (Android) and **v2rayN** (Windows).
+A centralized list of V2Ray subscription links for easy configuration with popular V2Ray clients like **v2rayNG (Android)** and **v2rayN (Windows)**.
 
 ---
 
-## 📋 How to Use
+## 📋 Usage Instructions
 
-1. **Get the Subscription File Link**  
-   Copy the following raw link to use in your V2Ray client:
-   ```bash
-  https://raw.githubusercontent.com/hossein-shayesteh/v2ray-config/refs/heads/main/V2RayConfigs
+**Subscription File URL:**
+```bash
+https://raw.githubusercontent.com/hossein-shayesteh/v2ray-config/refs/heads/main/V2RayConfigs
+```
 
-3. **Add the Link to Your V2Ray Client**  
+2. **Add the Link to Your V2Ray Client**  
 **For v2rayNG (Android):**
   1. Open the app and go to **Subscriptions**.
   2. Tap **Add Subscription**.
