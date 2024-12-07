@@ -12,16 +12,16 @@ https://raw.githubusercontent.com/hossein-shayesteh/v2ray-config/refs/heads/main
 ```
 
 2. **Add the Link to Your V2Ray Client**  
-**For v2rayNG (Android):**  
-1. Open the app and go to **Subscriptions**.  
-2. Tap **Add Subscription**.  
-3. Paste the link above and save.  
-4. Tap **Refresh** to fetch all nodes.
+  **For v2rayNG (Android):**  
+  1. Open the app and go to **Subscriptions**.  
+  2. Tap **Add Subscription**.  
+  3. Paste the link above and save.  
+  4. Tap **Refresh** to fetch all nodes.
 
 **For v2rayN (Windows):**  
-1. Open the software and go to **订阅设置 (Subscription Settings)**.  
-2. Click **Add** and paste the link.  
-3. Save and click **Update Subscription**.
+  1. Open the software and go to **订阅设置 (Subscription Settings)**.  
+  2. Click **Add** and paste the link.  
+  3. Save and click **Update Subscription**.
 
 ---
 
