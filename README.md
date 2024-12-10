@@ -10,6 +10,14 @@ This repository contains a V2Ray subscription link and configuration files that 
 
 ## Usage Instructions
 
+### Quick Subscription Links
+
+Click on the buttons below to automatically add the configurations to your V2Ray client:
+
+- [**Normal**](v2ray://subscribe/?url=https://quantumtacofiestahyperdrive-42xelasticnebulacruncher.hosseinxshayesteh.workers.dev/sub/2f480618-257a-4f07-931a-c53482f7716f#BPB-Normal)
+- [**Fragment**](v2ray://subscribe/?url=https://quantumtacofiestahyperdrive-42xelasticnebulacruncher.hosseinxshayesteh.workers.dev/fragsub/2f480618-257a-4f07-931a-c53482f7716f#BPB-Fragment)
+- [**Warp Pro**](v2ray://subscribe/?url=https://quantumtacofiestahyperdrive-42xelasticnebulacruncher.hosseinxshayesteh.workers.dev/warpsub/2f480618-257a-4f07-931a-c53482f7716f?app=nikang#BPB-Warp-Pro)
+
 ### V2RayN (Windows)
 
 1. Open V2RayN on your Windows machine.
