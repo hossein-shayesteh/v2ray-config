@@ -14,14 +14,17 @@ This repository contains a V2Ray subscription link and configuration files that 
 
 Below are the links to add configurations to your V2Ray client:
 
-- **Normal:**  
-  `v2ray://subscribe/?url=https://quantumtacofiestahyperdrive-42xelasticnebulacruncher.hosseinxshayesteh.workers.dev/sub/2f480618-257a-4f07-931a-c53482f7716f#BPB-Normal`
+<div>
+    <a href="v2ray://subscribe/?url=https://quantumtacofiestahyperdrive-42xelasticnebulacruncher.hosseinxshayesteh.workers.dev/sub/2f480618-257a-4f07-931a-c53482f7716f#BPB-Normal" style="display: inline-block; padding: 10px 20px; margin: 10px; color: white; background-color: #007BFF; text-decoration: none; border-radius: 5px;">BPB Normal</a>
+</div>
 
-- **Fragment:**  
-  `v2ray://subscribe/?url=https://quantumtacofiestahyperdrive-42xelasticnebulacruncher.hosseinxshayesteh.workers.dev/fragsub/2f480618-257a-4f07-931a-c53482f7716f#BPB-Fragment`
+<div>
+    <a href="v2ray://subscribe/?url=https://quantumtacofiestahyperdrive-42xelasticnebulacruncher.hosseinxshayesteh.workers.dev/fragsub/2f480618-257a-4f07-931a-c53482f7716f#BPB-Fragment" style="display: inline-block; padding: 10px 20px; margin: 10px; color: white; background-color: #28A745; text-decoration: none; border-radius: 5px;">BPB Fragment</a>
+</div>
 
-- **Warp Pro:**  
-  `v2ray://subscribe/?url=https://quantumtacofiestahyperdrive-42xelasticnebulacruncher.hosseinxshayesteh.workers.dev/warpsub/2f480618-257a-4f07-931a-c53482f7716f?app=nikang#BPB-Warp-Pro`
+<div>
+    <a href="v2ray://subscribe/?url=https://quantumtacofiestahyperdrive-42xelasticnebulacruncher.hosseinxshayesteh.workers.dev/warpsub/2f480618-257a-4f07-931a-c53482f7716f?app=nikang#BPB-Warp-Pro" style="display: inline-block; padding: 10px 20px; margin: 10px; color: white; background-color: #DC3545; text-decoration: none; border-radius: 5px;">BPB Warp Pro</a>
+</div>
 
 Copy and paste these links into your client’s subscription settings.
 
