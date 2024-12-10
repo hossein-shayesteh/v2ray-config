@@ -12,18 +12,25 @@ This repository contains a V2Ray subscription link and configuration files that 
 
 ### Quick Subscription Links
 
-Click on the buttons below to automatically add the configurations to your V2Ray client:
+Below are the links to add configurations to your V2Ray client:
 
-- [**Normal**](v2ray://subscribe/?url=https://quantumtacofiestahyperdrive-42xelasticnebulacruncher.hosseinxshayesteh.workers.dev/sub/2f480618-257a-4f07-931a-c53482f7716f#BPB-Normal)
-- [**Fragment**](v2ray://subscribe/?url=https://quantumtacofiestahyperdrive-42xelasticnebulacruncher.hosseinxshayesteh.workers.dev/fragsub/2f480618-257a-4f07-931a-c53482f7716f#BPB-Fragment)
-- [**Warp Pro**](v2ray://subscribe/?url=https://quantumtacofiestahyperdrive-42xelasticnebulacruncher.hosseinxshayesteh.workers.dev/warpsub/2f480618-257a-4f07-931a-c53482f7716f?app=nikang#BPB-Warp-Pro)
+- **Normal:**  
+  `v2ray://subscribe/?url=https://quantumtacofiestahyperdrive-42xelasticnebulacruncher.hosseinxshayesteh.workers.dev/sub/2f480618-257a-4f07-931a-c53482f7716f#BPB-Normal`
+
+- **Fragment:**  
+  `v2ray://subscribe/?url=https://quantumtacofiestahyperdrive-42xelasticnebulacruncher.hosseinxshayesteh.workers.dev/fragsub/2f480618-257a-4f07-931a-c53482f7716f#BPB-Fragment`
+
+- **Warp Pro:**  
+  `v2ray://subscribe/?url=https://quantumtacofiestahyperdrive-42xelasticnebulacruncher.hosseinxshayesteh.workers.dev/warpsub/2f480618-257a-4f07-931a-c53482f7716f?app=nikang#BPB-Warp-Pro`
+
+Copy and paste these links into your client’s subscription settings.
 
 ### V2RayN (Windows)
 
 1. Open V2RayN on your Windows machine.
 2. Click on the **"Subscribe"** button or go to **Subscription > Subscription settings**.
 3. In the subscription settings window, click **"Add"**.
-4. Paste the subscription URL from this repository into the URL field.
+4. Paste the subscription URL from the corresponding link above into the URL field.
 5. Click **"OK"** to save.
 6. Back in the main window, right-click on the V2RayN icon in the taskbar, go to **"Subscribe" > "Update Subscription"** to load the latest configs.
 
@@ -33,21 +40,8 @@ Click on the buttons below to automatically add the configurations to your V2Ray
 2. Tap the menu icon (usually three dots in the top-right corner).
 3. Select **"Subscription Settings"** or **"Manage Subscription"**.
 4. Tap **"Add Subscription"**.
-5. Paste the subscription URL from this repository into the URL field.
+5. Paste the subscription URL from the corresponding link above into the URL field.
 6. Save and then refresh/update the subscription to load the server list.
-
-## Obtaining the Subscription URL
-
-The subscription URL is provided in the repository files. You can find it in [**V2RayConfigs**](https://raw.githubusercontent.com/hossein-shayesteh/v2ray-config/refs/heads/main/V2RayConfigs).
-
-## Updating Servers
-
-To update the server list:
-
-- **V2RayN:** Right-click on the tray icon and select **"Subscribe" > "Update Subscription"**.
-- **V2RayNG:** Go to **Subscription Settings**, then **Update** or **Refresh** the subscription.
-
-Your client will fetch and apply any new or modified server configurations automatically.
 
 ## Contributing
 
@@ -58,5 +52,3 @@ If you want to add or modify server configurations, simply edit the `config.json
 - **For Personal Use Only:** These configurations are intended for personal use.  
 - **No Warranties:** Use at your own risk. We assume no responsibility for any misuse.  
 - **Legal Compliance:** Please ensure you are in compliance with local laws when using VPN or proxy services.
-
----
