@@ -300,6 +300,7 @@ jobs:
 
       - name: Create/Update README
         run: |
+          mkdir -p generated
           cat > generated/README.md << EOF
           # Mihomo/Clash Meta Configuration
 
@@ -356,9 +357,6 @@ jobs:
 
           **Source:** [hossein-shayesteh/v2ray-config](https://github.com/hossein-shayesteh/v2ray-config)
           **Iran Rules:** [Chocolate4U/Iran-clash-rules](https://github.com/Chocolate4U/Iran-clash-rules)
-          EOFconfig](https://github.com/hossein-shayesteh/v2ray-config)
-          **Iran Rules:** [Chocolate4U/Iran-clash-rules](https://github.com/Chocolate4U/Iran-clash-rules)
-          EOFconfig](https://github.com/hossein-shayesteh/v2ray-config)
           EOF
 
       - name: Commit and push changes
@@ -387,14 +385,13 @@ jobs:
       - name: Create release (optional)
         if: github.event_name == 'push'
         run: |
-          # Create a release with the generated config
-          RELEASE_TAG="config-$(date +%Y%m%d-%H%M%S)"
-          PROXY_COUNT=$(grep -c 'type:' generated/clashConfig.yaml || echo 0)
-
-          # This would require additional setup for releases
-          echo "📦 Would create release: $RELEASE_TAG with $PROXY_COUNT proxies"
+          echo "Skipping release creation - add release logic here"
+          # RELEASE_TAG="config-$(date +%Y%m%d-%H%M%S)"
+          # PROXY_COUNT=$(grep -c 'type:' generated/clashConfig.yaml || echo 0)
+          # echo "📦 Would create release: $RELEASE_TAG with $PROXY_COUNT proxies"
 
       - name: Upload artifacts
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           name: clash-config
