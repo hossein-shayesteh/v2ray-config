@@ -5,9 +5,7 @@ on:
     branches: [main]
     paths:
       - "V2RayConfigs"
-  schedule:
-    # Run every 6 hours to keep configs fresh
-    - cron: "0 */6 * * *"
+
   workflow_dispatch:
     # Allow manual trigger
 
@@ -397,7 +395,6 @@ jobs:
           echo "📦 Would create release: $RELEASE_TAG with $PROXY_COUNT proxies"
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
         if: always()
         with:
           name: clash-config
