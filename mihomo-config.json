@@ -70,22 +70,7 @@
       "icon": "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png",
       "proxies": ["Auto", "Load Balancer", "proxy1", "proxy2", "proxy3"]
     },
-    {
-      "name": "WhatsApp",
-      "type": "select",
-      "lazy": true,
-      "hidden": false,
-      "icon": "https://cdn.jsdelivr.net/gh/lige47/QuanX-icon-rule@main/icon/whatsapp(1).png",
-      "proxies": ["Smart VPN", "DIRECT"]
-    },
-    {
-      "name": "ChatGPT",
-      "type": "select",
-      "lazy": true,
-      "hidden": false,
-      "icon": "https://cdn.jsdelivr.net/gh/lige47/QuanX-icon-rule@main/icon/ChatGPT-green.png",
-      "proxies": ["Smart VPN", "DIRECT"]
-    },
+
     {
       "name": "Auto",
       "type": "url-test",
