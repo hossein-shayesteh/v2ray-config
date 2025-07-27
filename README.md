@@ -80,7 +80,7 @@ This repository automatically converts V2Ray proxy configurations (VLESS, VMess,
 Use this raw GitHub URL as subscription in your client:
 
 ```
-https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/generated/clashConfig.yaml
+https://raw.githubusercontent.com/hossein-shayesteh/v2ray-config/refs/heads/main/generated/clashConfig.yaml
 ```
 
 ### Method 3: GitHub Artifacts
