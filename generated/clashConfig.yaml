@@ -26,27 +26,27 @@ dns:
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - rule-set:private
+  - rule-set:private
   default-nameserver:
-    - 8.8.8.8
-    - 8.8.4.4
+  - 8.8.8.8
+  - 8.8.4.4
   nameserver:
-    - 4.2.2.4
-    - 1.1.1.1
+  - 4.2.2.4
+  - 1.1.1.1
   direct-nameserver:
-    - 8.8.8.8
-    - 8.8.4.4
+  - 8.8.8.8
+  - 8.8.4.4
   proxy-server-nameserver:
-    - 4.2.2.4
-    - 1.1.1.1
+  - 4.2.2.4
+  - 1.1.1.1
   fallback:
-    - quic://8.8.8.8
-    - quic://8.8.4.4
-    - https://google.com/dns-query
-    - https://8.8.8.8/dns-query
+  - quic://8.8.8.8
+  - quic://8.8.4.4
+  - https://google.com/dns-query
+  - https://8.8.8.8/dns-query
   fallback-filter:
     ipcidr:
-      - 10.10.34.34/29
+    - 10.10.34.34/29
 tun:
   enable: true
   stack: gvisor
@@ -54,240 +54,701 @@ tun:
   auto-redirect: true
   strict-route: true
   dns-hijack:
-    - any:53
-    - tcp://any:53
+  - any:53
+  - tcp://any:53
 proxies:
-  - name: 🇩🇪 VLESS 01
-    type: vless
-    server: 185.135.9.223
-    port: 443
-    uuid: 401374e6-df77-41fb-f638-dad8184f175b
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: pqh24v3.hiddendom.shop
-    network: grpc
-    alpn:
-      - h2
-    grpc-opts: {}
-  - name: 🇨🇦 VLESS 02
-    type: vless
-    server: confident-club.seotoolsforyou.co.uk
-    port: 80
-    uuid: 9926ee97-4398-48dd-b263-2863c62f5c41
-    udp: true
-    tls: false
-    skip-cert-verify: true
-    servername: confident-club.seotoolsforyou.co.uk
-    network: ws
-    ws-opts:
-      path: /
-  - name: 🇫🇷 VLESS 03
-    type: vless
-    server: 185.193.89.61
-    port: 443
-    uuid: e134f4a5-346e-493f-b74a-988ef7a4ff27
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: cdnjs.com
-    network: tcp
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: 9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg
-      short-id: 19aa22f681923dc8
-  - name: 🇺🇸 VLESS 04
-    type: vless
-    server: handsome-device.oneeat.co
-    port: 80
-    uuid: 2ad87f95-7a0b-4018-8497-5ecaac2f0ddf
-    udp: true
-    tls: false
-    skip-cert-verify: true
-    servername: handsome-device.oneeat.co
-    network: ws
-    ws-opts:
-      path: /
-  - name: 🇺🇸 VLESS 05
-    type: vless
-    server: 72.14.190.88
-    port: 443
-    uuid: bc310b8d-fbe8-4c55-970b-be77816fceea
-    udp: true
-    tls: false
-    skip-cert-verify: true
-    servername: 72.14.190.88
-    network: tcp
-  - name: 🇨🇦 VLESS 06
-    type: vless
-    server: brainy-party.seotoolsforyou.co.uk
-    port: 80
-    uuid: 34797f17-09a1-400c-9f4b-275718d62a0f
-    udp: true
-    tls: false
-    skip-cert-verify: true
-    servername: brainy-party.seotoolsforyou.co.uk
-    network: ws
-    ws-opts:
-      path: /?--@FREEV2RNG--Bia-FREEV2rng--Kanal-@FREEv2RNG--
-  - name: 🇨🇦 VLESS 07
-    type: vless
-    server: www.meter.net
-    port: 443
-    uuid: 1b368bf6-5aac-413c-a77c-229fb984d5ae
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: mAXNetvIpAp-cLOuD76.netKh3.siTe
-    network: ws
-    ws-opts:
-      path: /linkws?ed=2560
-      headers:
-        Host: mAXNetvIpAp-cLOuD76.netKh3.siTe
-  - name: 🇺🇸 VLESS 08
-    type: vless
-    server: 45.8.146.207
-    port: 80
-    uuid: a6c4db3e-7785-429e-8bc5-9eaf7b1a79b1
-    udp: true
-    tls: false
-    skip-cert-verify: true
-    servername: 45.8.146.207
-    network: ws
-    ws-opts:
-      path: /vless/
-  - name: 🇨🇦 VLESS 09
-    type: vless
-    server: wouldyoumarriemepleasefuckthesystem2.siasia.ir
-    port: 2053
-    uuid: 3891b3ce-bb3a-45bf-bd8e-90e2487d121e
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: hheydudethisworldisshet.siasia.ir
-    network: ws
-    alpn:
-      - h3
-      - h2
-    client-fingerprint: chrome
-    ws-opts:
-      path: /apiii
-      headers:
-        Host: hheydudethisworldisshet.siasia.ir
-  - name: 🇨🇦 VLESS 10
-    type: vless
-    server: grumpy-building.seotoolsforyou.co.uk
-    port: 80
-    uuid: 935c990a-9bcc-484b-86a2-2a402f9ad1d4
-    udp: true
-    tls: false
-    skip-cert-verify: true
-    servername: grumpy-building.seotoolsforyou.co.uk
-    network: ws
-    ws-opts:
-      path: /
-  - name: 🇨🇦 VLESS 11
-    type: vless
-    server: narrow-passenger.oneeat.co
-    port: 80
-    uuid: 5a12794b-2125-46d7-a748-927a989faa04
-    udp: true
-    tls: false
-    skip-cert-verify: true
-    servername: narrow-passenger.oneeat.co
-    network: ws
-    ws-opts:
-      path: /?---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG
-  - name: 🇨🇦 VLESS 12
-    type: vless
-    server: 92.53.188.36
-    port: 443
-    uuid: 401374e6-df77-41fb-f638-dad8184f175b
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: pqh23v4.hiddendom.shop
-    network: grpc
-    alpn:
-      - h2
-    grpc-opts: {}
-  - name: 🇩🇪 VLESS 13
-    type: vless
-    server: 91.99.222.180
-    port: 8443
-    uuid: bb7b030f-fd37-488a-be1f-1a26d874cb26
-    udp: true
-    tls: false
-    skip-cert-verify: true
-    servername: 91.99.222.180
-    network: tcp
+- name: 🇨🇦 VLESS 01
+  type: vless
+  server: confident-club.seotoolsforyou.co.uk
+  port: 80
+  uuid: 9926ee97-4398-48dd-b263-2863c62f5c41
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: confident-club.seotoolsforyou.co.uk
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇷 VLESS 02
+  type: vless
+  server: 185.193.89.61
+  port: 443
+  uuid: e134f4a5-346e-493f-b74a-988ef7a4ff27
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdnjs.com
+  network: tcp
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg
+    short-id: 19aa22f681923dc8
+- name: 🇨🇦 VLESS 03
+  type: vless
+  server: handsome-device.oneeat.co
+  port: 80
+  uuid: 2ad87f95-7a0b-4018-8497-5ecaac2f0ddf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: handsome-device.oneeat.co
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇺🇸 VLESS 04
+  type: vless
+  server: 72.14.190.88
+  port: 443
+  uuid: bc310b8d-fbe8-4c55-970b-be77816fceea
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: 72.14.190.88
+  network: tcp
+- name: 🇨🇦 VLESS 05
+  type: vless
+  server: brainy-party.seotoolsforyou.co.uk
+  port: 80
+  uuid: 34797f17-09a1-400c-9f4b-275718d62a0f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: brainy-party.seotoolsforyou.co.uk
+  network: ws
+  ws-opts:
+    path: /?--@FREEV2RNG--Bia-FREEV2rng--Kanal-@FREEv2RNG--
+- name: 🇨🇦 VLESS 06
+  type: vless
+  server: www.meter.net
+  port: 443
+  uuid: 1b368bf6-5aac-413c-a77c-229fb984d5ae
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mAXNetvIpAp-cLOuD76.netKh3.siTe
+  network: ws
+  ws-opts:
+    path: /linkws?ed=2560
+    headers:
+      Host: mAXNetvIpAp-cLOuD76.netKh3.siTe
+- name: 🇺🇸 VLESS 07
+  type: vless
+  server: 45.8.146.207
+  port: 80
+  uuid: a6c4db3e-7785-429e-8bc5-9eaf7b1a79b1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: 45.8.146.207
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇨🇦 VLESS 08
+  type: vless
+  server: wouldyoumarriemepleasefuckthesystem2.siasia.ir
+  port: 2053
+  uuid: 3891b3ce-bb3a-45bf-bd8e-90e2487d121e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hheydudethisworldisshet.siasia.ir
+  network: ws
+  alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  ws-opts:
+    path: /apiii
+    headers:
+      Host: hheydudethisworldisshet.siasia.ir
+- name: 🇨🇦 VLESS 09
+  type: vless
+  server: grumpy-building.seotoolsforyou.co.uk
+  port: 80
+  uuid: 935c990a-9bcc-484b-86a2-2a402f9ad1d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: grumpy-building.seotoolsforyou.co.uk
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇺🇸 VLESS 10
+  type: vless
+  server: narrow-passenger.oneeat.co
+  port: 80
+  uuid: 5a12794b-2125-46d7-a748-927a989faa04
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: narrow-passenger.oneeat.co
+  network: ws
+  ws-opts:
+    path: /?---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG
+- name: 🇨🇦 VLESS 11
+  type: vless
+  server: 92.53.188.36
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pqh23v4.hiddendom.shop
+  network: grpc
+  alpn:
+  - h2
+  grpc-opts: {}
+- name: 🇩🇪 VLESS 12
+  type: vless
+  server: 91.99.222.180
+  port: 8443
+  uuid: bb7b030f-fd37-488a-be1f-1a26d874cb26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: 91.99.222.180
+  network: tcp
+- name: 🇬🇧 VLESS 13
+  type: vless
+  server: 95.164.18.29
+  port: 443
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 95.164.18.29
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇨🇦 VMESS 14
+  type: vmess
+  server: www.meter.net
+  port: 2083
+  uuid: d218dfe5-fae6-408e-b615-8666df7f0924
+  alterId: 0
+  udp: true
+  skip-cert-verify: true
+  cipher: none
+  network: ws
+  tls: true
+  servername: ''
+  ws-opts:
+    path: /wssss
+    headers:
+      Host: blaze-uk-48.pinkle7.site
+- name: 🇩🇪 VMESS 15
+  type: vmess
+  server: ov-germany7.09vpn.com
+  port: 8443
+  uuid: 8b7ec98d-c291-4034-9719-e6d62051636a
+  alterId: 0
+  udp: true
+  skip-cert-verify: true
+  cipher: auto
+  network: ws
+  tls: true
+  servername: ''
+  ws-opts:
+    path: /vmess/
+- name: 🇨🇦 VLESS 17
+  type: vless
+  server: 172.67.150.132
+  port: 443
+  uuid: 3ed60fc0-f13d-490a-a244-c827a8a8b1e5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wwWwWDrt.444682.XyZ
+  network: ws
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /j4Wxk3KUHJho91NIJLrX
+    headers:
+      Host: wwwwwdrt.444682.xyz
+- name: 🇫🇷 VLESS 18
+  type: vless
+  server: 109.176.244.129
+  port: 4450
+  uuid: c11bc9cb-1a58-48c7-b118-67d1dcf8af91
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zhaket.com
+  network: tcp
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: tv4idxKiDI8SkHFu0p6YL6VGHMAp2XWxYpXltkG1qx0
+    short-id: bfd3cc17
+- name: 🇨🇦 VMESS 19
+  type: vmess
+  server: www.speedtest.net
+  port: 443
+  uuid: e2fb28b8-a457-4bd2-801e-56fdcccbd88e
+  alterId: 0
+  udp: true
+  skip-cert-verify: true
+  cipher: none
+  network: ws
+  tls: true
+  servername: blaze-cana-126.blazeservers1.site
+  ws-opts:
+    path: /linkvkwsss
+    headers:
+      Host: blaze-cana-126.blazeservers1.site
+- name: 🇨🇦 VLESS 20
+  type: vless
+  server: 172.67.220.32
+  port: 443
+  uuid: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: RRRFGhY7.999836.xyZ
+  network: ws
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  ws-opts:
+    path: /MIrEVIUviSe8ydvnmRKWDa8
+    headers:
+      Host: rrrfghy7.999836.xyz
+- name: 🇩🇪 VMESS 21
+  type: vmess
+  server: 51.68.191.233
+  port: 80
+  uuid: f0eda072-9ae8-494c-a495-215fa5729467
+  alterId: 0
+  udp: true
+  skip-cert-verify: true
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 🇫🇷 VLESS 22
+  type: vless
+  server: hp.mastertunnel.shop
+  port: 8080
+  uuid: 87b9318e-60d7-4d3f-907f-e74cb7607b59
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: hp.mastertunnel.shop
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: refersion.com
+- name: 🇫🇷 VLESS 23
+  type: vless
+  server: 185.231.205.139
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: 185.231.205.139
+  network: grpc
+  grpc-opts: {}
+- name: 🇬🇧 VLESS 24
+  type: vless
+  server: 95.164.18.16
+  port: 2082
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: 95.164.18.16
+  network: ws
+  ws-opts:
+    path: /?---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG
+- name: 🇬🇧 VLESS 25
+  type: vless
+  server: 77.91.101.228
+  port: 2082
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: 77.91.101.228
+  network: ws
+  ws-opts:
+    path: /?---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG
+- name: 🇨🇦 VLESS 26
+  type: vless
+  server: 104.17.147.22
+  port: 2087
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: smart.v2plusify.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: smart.v2plusify.org
+- name: 🇨🇦 VLESS 27
+  type: vless
+  server: 104.26.2.186
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp35.hiddendom.shop
+  network: grpc
+  alpn:
+  - h2تعداد
+  grpc-opts: {}
+- name: 🇬🇧 VLESS 28
+  type: vless
+  server: 95.164.18.29
+  port: 2052
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: 95.164.18.29
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇬🇧 VLESS 29
+  type: vless
+  server: 95.164.18.39
+  port: 2053
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 95.164.18.39
+  network: grpc
+  grpc-opts: {}
+- name: 🇨🇦 VMESS 31
+  type: vmess
+  server: 104.21.3.189
+  port: 2053
+  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
+  alterId: 0
+  udp: true
+  skip-cert-verify: true
+  cipher: auto
+  network: ws
+  tls: true
+  servername: ''
+  ws-opts:
+    path: /
+    headers:
+      Host: cc2d4.89060004.xyz
+- name: 🇨🇦 VLESS 32
+  type: vless
+  server: ipw.gfdv54cvghhgfhgj-njhgj64.info
+  port: 2096
+  uuid: 49d6d5dd-bc9b-4ff9-ade9-3b9c25ca5f25
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 638890562127857314.amsterdam-prx-dnraaal.info
+  network: ws
+  ws-opts:
+    path: /citxcbws
+    headers:
+      Host: 638890562127857314.amsterdam-prx-dnraaal.info
+- name: 🇨🇦 VLESS 33
+  type: vless
+  server: www.speedtest.net.cdn.cloudflare.net
+  port: 8080
+  uuid: 813d7c7e-d2ea-460f-9bf7-e6fa6a073b67
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: www.speedtest.net.cdn.cloudflare.net
+  network: ws
+  ws-opts:
+    path: /?edTelegram:@ConfingV2RaayNG,@ConfingV2RaayNG,@ConfingV2RaayNG,@ConfingV2RaayNG,@ConfingV2RaayNG,@ConfingV2RaayNG,@ConfingV2RaayNG,@ConfingV2RaayNG,@ConfingV2RaayNG
+    headers:
+      Host: TW.kKpopH4Zmc.ZUlaIr.orG
+- name: 🇨🇦 VLESS 34
+  type: vless
+  server: communal-loss.oneeat.co
+  port: 80
+  uuid: a2af50d9-09c7-4a44-90d0-42da35923e9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: communal-loss.oneeat.co
+  network: ws
+  ws-opts:
+    path: /?---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG
+- name: 🇺🇸 VLESS 35
+  type: vless
+  server: dl1-fi-cdn.easy-upload.org
+  port: 80
+  uuid: ee2bb495-2632-445b-b1f8-3c476a50b78b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: dl1-fi-cdn.easy-upload.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dl1-fi-cdn.easy-upload.org
+- name: 🇨🇦 VLESS 36
+  type: vless
+  server: wouldyoumarriemepleasefuckthesystem3.siasia.ir
+  port: 2053
+  uuid: 3891b3ce-bb3a-45bf-bd8e-90e2487d121e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hheydudethisworldisshet.siasia.ir
+  network: ws
+  alpn:
+  - h3
+  - h2
+  client-fingerprint: randomized
+  ws-opts:
+    path: /apiii
+    headers:
+      Host: hheydudethisworldisshet.siasia.ir
+- name: 🇺🇸 VMESS 37
+  type: vmess
+  server: 159.203.138.123
+  port: 1901
+  uuid: dd37eb89-a92a-4102-af35-eac7f2a95367
+  alterId: 0
+  udp: true
+  skip-cert-verify: true
+  cipher: none
+  network: tcp
+- name: 🇮🇷 VMESS 38
+  type: vmess
+  server: 2.188.219.43
+  port: 8443
+  uuid: b2e38621-035b-43f8-84a5-e92160762fc3
+  alterId: 0
+  udp: true
+  skip-cert-verify: true
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇷 VLESS 39
+  type: vless
+  server: 95.164.45.70
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: 95.164.45.70
+  network: grpc
+  grpc-opts: {}
+- name: 🇩🇪 VLESS 40
+  type: vless
+  server: aiteam.lonup.org
+  port: 55900
+  uuid: d196897a-006e-4454-9478-67b6fd8ce021
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: refersion.com
+  network: tcp
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: jH08UU9id-Q8i17ltvHPO3sfGL6YTJIFveAJGgNjNl8
+    short-id: 190d32b118caf07f
+- name: 🇱🇻 VMESS 41
+  type: vmess
+  server: 216.173.69.250
+  port: 8443
+  uuid: 91382092-2330-455b-8a1c-9c129cfe661a
+  alterId: 0
+  udp: true
+  skip-cert-verify: true
+  cipher: none
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇬🇧 VLESS 42
+  type: vless
+  server: 95.164.18.16
+  port: 8443
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 95.164.18.16
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇺🇸 VLESS 43
+  type: vless
+  server: 5.181.171.2
+  port: 443
+  uuid: 8e6acce9-8b56-7190-d491-7d84f8189e26
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speed.cloudflare.com
+  network: tcp
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y
 proxy-groups:
-  - name: Smart VPN
-    type: select
-    lazy: true
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
-    proxies:
-      - Auto
-      - Load Balancer
-      - 🇩🇪 VLESS 01
-      - 🇨🇦 VLESS 02
-      - 🇫🇷 VLESS 03
-      - 🇺🇸 VLESS 04
-      - 🇺🇸 VLESS 05
-      - 🇨🇦 VLESS 06
-      - 🇨🇦 VLESS 07
-      - 🇺🇸 VLESS 08
-      - 🇨🇦 VLESS 09
-      - 🇨🇦 VLESS 10
-      - 🇨🇦 VLESS 11
-      - 🇨🇦 VLESS 12
-      - 🇩🇪 VLESS 13
-  - name: Auto
-    type: url-test
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/EU.png
-    url: http://gstatic.com/generate_204
-    lazy: true
-    interval: 120
-    tolerance: 200
-    hidden: true
-    proxies:
-      - 🇩🇪 VLESS 01
-      - 🇨🇦 VLESS 02
-      - 🇫🇷 VLESS 03
-      - 🇺🇸 VLESS 04
-      - 🇺🇸 VLESS 05
-      - 🇨🇦 VLESS 06
-      - 🇨🇦 VLESS 07
-      - 🇺🇸 VLESS 08
-      - 🇨🇦 VLESS 09
-      - 🇨🇦 VLESS 10
-      - 🇨🇦 VLESS 11
-      - 🇨🇦 VLESS 12
-      - 🇩🇪 VLESS 13
-  - name: Load Balancer
-    type: load-balance
-    strategy: consistent-hashing
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png
-    url: http://gstatic.com/generate_204
-    lazy: true
-    interval: 120
-    tolerance: 200
-    hidden: true
-    proxies:
-      - 🇩🇪 VLESS 01
-      - 🇨🇦 VLESS 02
-      - 🇫🇷 VLESS 03
-      - 🇺🇸 VLESS 04
-      - 🇺🇸 VLESS 05
-      - 🇨🇦 VLESS 06
-      - 🇨🇦 VLESS 07
-      - 🇺🇸 VLESS 08
-      - 🇨🇦 VLESS 09
-      - 🇨🇦 VLESS 10
-      - 🇨🇦 VLESS 11
-      - 🇨🇦 VLESS 12
-      - 🇩🇪 VLESS 13
+- name: Smart VPN
+  type: select
+  lazy: true
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
+  proxies:
+  - Auto
+  - Load Balancer
+  - 🇨🇦 VLESS 01
+  - 🇫🇷 VLESS 02
+  - 🇨🇦 VLESS 03
+  - 🇺🇸 VLESS 04
+  - 🇨🇦 VLESS 05
+  - 🇨🇦 VLESS 06
+  - 🇺🇸 VLESS 07
+  - 🇨🇦 VLESS 08
+  - 🇨🇦 VLESS 09
+  - 🇺🇸 VLESS 10
+  - 🇨🇦 VLESS 11
+  - 🇩🇪 VLESS 12
+  - 🇬🇧 VLESS 13
+  - 🇨🇦 VMESS 14
+  - 🇩🇪 VMESS 15
+  - 🇨🇦 VLESS 17
+  - 🇫🇷 VLESS 18
+  - 🇨🇦 VMESS 19
+  - 🇨🇦 VLESS 20
+  - 🇩🇪 VMESS 21
+  - 🇫🇷 VLESS 22
+  - 🇫🇷 VLESS 23
+  - 🇬🇧 VLESS 24
+  - 🇬🇧 VLESS 25
+  - 🇨🇦 VLESS 26
+  - 🇨🇦 VLESS 27
+  - 🇬🇧 VLESS 28
+  - 🇬🇧 VLESS 29
+  - 🇨🇦 VMESS 31
+  - 🇨🇦 VLESS 32
+  - 🇨🇦 VLESS 33
+  - 🇨🇦 VLESS 34
+  - 🇺🇸 VLESS 35
+  - 🇨🇦 VLESS 36
+  - 🇺🇸 VMESS 37
+  - 🇮🇷 VMESS 38
+  - 🇫🇷 VLESS 39
+  - 🇩🇪 VLESS 40
+  - 🇱🇻 VMESS 41
+  - 🇬🇧 VLESS 42
+  - 🇺🇸 VLESS 43
+- name: Auto
+  type: url-test
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/EU.png
+  url: http://gstatic.com/generate_204
+  lazy: true
+  interval: 120
+  tolerance: 200
+  hidden: true
+  proxies:
+  - 🇨🇦 VLESS 01
+  - 🇫🇷 VLESS 02
+  - 🇨🇦 VLESS 03
+  - 🇺🇸 VLESS 04
+  - 🇨🇦 VLESS 05
+  - 🇨🇦 VLESS 06
+  - 🇺🇸 VLESS 07
+  - 🇨🇦 VLESS 08
+  - 🇨🇦 VLESS 09
+  - 🇺🇸 VLESS 10
+  - 🇨🇦 VLESS 11
+  - 🇩🇪 VLESS 12
+  - 🇬🇧 VLESS 13
+  - 🇨🇦 VMESS 14
+  - 🇩🇪 VMESS 15
+  - 🇨🇦 VLESS 17
+  - 🇫🇷 VLESS 18
+  - 🇨🇦 VMESS 19
+  - 🇨🇦 VLESS 20
+  - 🇩🇪 VMESS 21
+  - 🇫🇷 VLESS 22
+  - 🇫🇷 VLESS 23
+  - 🇬🇧 VLESS 24
+  - 🇬🇧 VLESS 25
+  - 🇨🇦 VLESS 26
+  - 🇨🇦 VLESS 27
+  - 🇬🇧 VLESS 28
+  - 🇬🇧 VLESS 29
+  - 🇨🇦 VMESS 31
+  - 🇨🇦 VLESS 32
+  - 🇨🇦 VLESS 33
+  - 🇨🇦 VLESS 34
+  - 🇺🇸 VLESS 35
+  - 🇨🇦 VLESS 36
+  - 🇺🇸 VMESS 37
+  - 🇮🇷 VMESS 38
+  - 🇫🇷 VLESS 39
+  - 🇩🇪 VLESS 40
+  - 🇱🇻 VMESS 41
+  - 🇬🇧 VLESS 42
+  - 🇺🇸 VLESS 43
+- name: Load Balancer
+  type: load-balance
+  strategy: consistent-hashing
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png
+  url: http://gstatic.com/generate_204
+  lazy: true
+  interval: 120
+  tolerance: 200
+  hidden: true
+  proxies:
+  - 🇨🇦 VLESS 01
+  - 🇫🇷 VLESS 02
+  - 🇨🇦 VLESS 03
+  - 🇺🇸 VLESS 04
+  - 🇨🇦 VLESS 05
+  - 🇨🇦 VLESS 06
+  - 🇺🇸 VLESS 07
+  - 🇨🇦 VLESS 08
+  - 🇨🇦 VLESS 09
+  - 🇺🇸 VLESS 10
+  - 🇨🇦 VLESS 11
+  - 🇩🇪 VLESS 12
+  - 🇬🇧 VLESS 13
+  - 🇨🇦 VMESS 14
+  - 🇩🇪 VMESS 15
+  - 🇨🇦 VLESS 17
+  - 🇫🇷 VLESS 18
+  - 🇨🇦 VMESS 19
+  - 🇨🇦 VLESS 20
+  - 🇩🇪 VMESS 21
+  - 🇫🇷 VLESS 22
+  - 🇫🇷 VLESS 23
+  - 🇬🇧 VLESS 24
+  - 🇬🇧 VLESS 25
+  - 🇨🇦 VLESS 26
+  - 🇨🇦 VLESS 27
+  - 🇬🇧 VLESS 28
+  - 🇬🇧 VLESS 29
+  - 🇨🇦 VMESS 31
+  - 🇨🇦 VLESS 32
+  - 🇨🇦 VLESS 33
+  - 🇨🇦 VLESS 34
+  - 🇺🇸 VLESS 35
+  - 🇨🇦 VLESS 36
+  - 🇺🇸 VMESS 37
+  - 🇮🇷 VMESS 38
+  - 🇫🇷 VLESS 39
+  - 🇩🇪 VLESS 40
+  - 🇱🇻 VMESS 41
+  - 🇬🇧 VLESS 42
+  - 🇺🇸 VLESS 43
 rule-providers:
   private:
     type: http
@@ -367,16 +828,16 @@ rule-providers:
     path: ./ruleset/phishing-ip.txt
     interval: 86400
 rules:
-  - DOMAIN-SUFFIX,ir,DIRECT
-  - DOMAIN,www.cloudflare.com,DIRECT
-  - RULE-SET,ads,REJECT
-  - RULE-SET,malware,REJECT
-  - RULE-SET,malware-ip,REJECT
-  - RULE-SET,phishing,REJECT
-  - RULE-SET,phishing-ip,REJECT
-  - RULE-SET,cryptominers,REJECT
-  - RULE-SET,private,DIRECT
-  - RULE-SET,ircidr,DIRECT
-  - RULE-SET,iran_other,DIRECT
-  - RULE-SET,apps,DIRECT
-  - MATCH,Smart VPN
+- DOMAIN-SUFFIX,ir,DIRECT
+- DOMAIN,www.cloudflare.com,DIRECT
+- RULE-SET,ads,REJECT
+- RULE-SET,malware,REJECT
+- RULE-SET,malware-ip,REJECT
+- RULE-SET,phishing,REJECT
+- RULE-SET,phishing-ip,REJECT
+- RULE-SET,cryptominers,REJECT
+- RULE-SET,private,DIRECT
+- RULE-SET,ircidr,DIRECT
+- RULE-SET,iran_other,DIRECT
+- RULE-SET,apps,DIRECT
+- MATCH,Smart VPN
