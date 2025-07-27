@@ -1,0 +1,382 @@
+mixed-port: 7890
+ipv6: false
+allow-lan: true
+mode: rule
+log-level: silent
+geo-auto-update: true
+geo-update-interval: 168
+enable-process: true
+find-process-mode: strict
+tcp-concurrent: true
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  parse-pure-ip: true
+  force-dns-mapping: true
+  override-destination: false
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  respect-rules: true
+  use-system-hosts: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+  - rule-set:private
+  default-nameserver:
+  - 8.8.8.8
+  - 8.8.4.4
+  nameserver:
+  - 4.2.2.4
+  - 1.1.1.1
+  direct-nameserver:
+  - 8.8.8.8
+  - 8.8.4.4
+  proxy-server-nameserver:
+  - 4.2.2.4
+  - 1.1.1.1
+  fallback:
+  - quic://8.8.8.8
+  - quic://8.8.4.4
+  - https://google.com/dns-query
+  - https://8.8.8.8/dns-query
+  fallback-filter:
+    ipcidr:
+    - 10.10.34.34/29
+tun:
+  enable: true
+  stack: gvisor
+  auto-route: true
+  auto-redirect: true
+  strict-route: true
+  dns-hijack:
+  - any:53
+  - tcp://any:53
+proxies:
+- name: 🇩🇪 VLESS 01
+  type: vless
+  server: 185.135.9.223
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pqh24v3.hiddendom.shop
+  network: grpc
+  alpn:
+  - h2
+  grpc-opts: {}
+- name: 🇨🇦 VLESS 02
+  type: vless
+  server: confident-club.seotoolsforyou.co.uk
+  port: 80
+  uuid: 9926ee97-4398-48dd-b263-2863c62f5c41
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: confident-club.seotoolsforyou.co.uk
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇷 VLESS 03
+  type: vless
+  server: 185.193.89.61
+  port: 443
+  uuid: e134f4a5-346e-493f-b74a-988ef7a4ff27
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdnjs.com
+  network: tcp
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg
+    short-id: 19aa22f681923dc8
+- name: 🇺🇸 VLESS 04
+  type: vless
+  server: handsome-device.oneeat.co
+  port: 80
+  uuid: 2ad87f95-7a0b-4018-8497-5ecaac2f0ddf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: handsome-device.oneeat.co
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇺🇸 VLESS 05
+  type: vless
+  server: 72.14.190.88
+  port: 443
+  uuid: bc310b8d-fbe8-4c55-970b-be77816fceea
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: 72.14.190.88
+  network: tcp
+- name: 🇨🇦 VLESS 06
+  type: vless
+  server: brainy-party.seotoolsforyou.co.uk
+  port: 80
+  uuid: 34797f17-09a1-400c-9f4b-275718d62a0f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: brainy-party.seotoolsforyou.co.uk
+  network: ws
+  ws-opts:
+    path: /?--@FREEV2RNG--Bia-FREEV2rng--Kanal-@FREEv2RNG--
+- name: 🇨🇦 VLESS 07
+  type: vless
+  server: www.meter.net
+  port: 443
+  uuid: 1b368bf6-5aac-413c-a77c-229fb984d5ae
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mAXNetvIpAp-cLOuD76.netKh3.siTe
+  network: ws
+  ws-opts:
+    path: /linkws?ed=2560
+    headers:
+      Host: mAXNetvIpAp-cLOuD76.netKh3.siTe
+- name: 🇺🇸 VLESS 08
+  type: vless
+  server: 45.8.146.207
+  port: 80
+  uuid: a6c4db3e-7785-429e-8bc5-9eaf7b1a79b1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: 45.8.146.207
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇨🇦 VLESS 09
+  type: vless
+  server: wouldyoumarriemepleasefuckthesystem2.siasia.ir
+  port: 2053
+  uuid: 3891b3ce-bb3a-45bf-bd8e-90e2487d121e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hheydudethisworldisshet.siasia.ir
+  network: ws
+  alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  ws-opts:
+    path: /apiii
+    headers:
+      Host: hheydudethisworldisshet.siasia.ir
+- name: 🇨🇦 VLESS 10
+  type: vless
+  server: grumpy-building.seotoolsforyou.co.uk
+  port: 80
+  uuid: 935c990a-9bcc-484b-86a2-2a402f9ad1d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: grumpy-building.seotoolsforyou.co.uk
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇨🇦 VLESS 11
+  type: vless
+  server: narrow-passenger.oneeat.co
+  port: 80
+  uuid: 5a12794b-2125-46d7-a748-927a989faa04
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: narrow-passenger.oneeat.co
+  network: ws
+  ws-opts:
+    path: /?---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG---Join-TELEGRAM-FREEV2RNG
+- name: 🇨🇦 VLESS 12
+  type: vless
+  server: 92.53.188.36
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pqh23v4.hiddendom.shop
+  network: grpc
+  alpn:
+  - h2
+  grpc-opts: {}
+- name: 🇩🇪 VLESS 13
+  type: vless
+  server: 91.99.222.180
+  port: 8443
+  uuid: bb7b030f-fd37-488a-be1f-1a26d874cb26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: 91.99.222.180
+  network: tcp
+proxy-groups:
+- name: Smart VPN
+  type: select
+  lazy: true
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
+  proxies:
+  - Auto
+  - Load Balancer
+  - 🇩🇪 VLESS 01
+  - 🇨🇦 VLESS 02
+  - 🇫🇷 VLESS 03
+  - 🇺🇸 VLESS 04
+  - 🇺🇸 VLESS 05
+  - 🇨🇦 VLESS 06
+  - 🇨🇦 VLESS 07
+  - 🇺🇸 VLESS 08
+  - 🇨🇦 VLESS 09
+  - 🇨🇦 VLESS 10
+  - 🇨🇦 VLESS 11
+  - 🇨🇦 VLESS 12
+  - 🇩🇪 VLESS 13
+- name: Auto
+  type: url-test
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/EU.png
+  url: http://gstatic.com/generate_204
+  lazy: true
+  interval: 120
+  tolerance: 200
+  hidden: true
+  proxies:
+  - 🇩🇪 VLESS 01
+  - 🇨🇦 VLESS 02
+  - 🇫🇷 VLESS 03
+  - 🇺🇸 VLESS 04
+  - 🇺🇸 VLESS 05
+  - 🇨🇦 VLESS 06
+  - 🇨🇦 VLESS 07
+  - 🇺🇸 VLESS 08
+  - 🇨🇦 VLESS 09
+  - 🇨🇦 VLESS 10
+  - 🇨🇦 VLESS 11
+  - 🇨🇦 VLESS 12
+  - 🇩🇪 VLESS 13
+- name: Load Balancer
+  type: load-balance
+  strategy: consistent-hashing
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png
+  url: http://gstatic.com/generate_204
+  lazy: true
+  interval: 120
+  tolerance: 200
+  hidden: true
+  proxies:
+  - 🇩🇪 VLESS 01
+  - 🇨🇦 VLESS 02
+  - 🇫🇷 VLESS 03
+  - 🇺🇸 VLESS 04
+  - 🇺🇸 VLESS 05
+  - 🇨🇦 VLESS 06
+  - 🇨🇦 VLESS 07
+  - 🇺🇸 VLESS 08
+  - 🇨🇦 VLESS 09
+  - 🇨🇦 VLESS 10
+  - 🇨🇦 VLESS 11
+  - 🇨🇦 VLESS 12
+  - 🇩🇪 VLESS 13
+rule-providers:
+  private:
+    type: http
+    format: text
+    behavior: ipcidr
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/private.txt
+    path: ./ruleset/private.txt
+    interval: 86400
+  ircidr:
+    type: http
+    format: text
+    behavior: ipcidr
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/ircidr.txt
+    path: ./ruleset/ircidr.txt
+    interval: 86400
+  iran_other:
+    type: http
+    format: text
+    behavior: domain
+    url: https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules_other.txt
+    path: ./ruleset/iran_other.txt
+    interval: 86400
+  apps:
+    type: http
+    format: text
+    behavior: classical
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/apps.txt
+    path: ./ruleset/apps.txt
+    interval: 86400
+  Pro:
+    type: http
+    format: text
+    behavior: domain
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/nsfw.txt
+    path: ./ruleset/pro.txt
+    interval: 86400
+  ads:
+    type: http
+    format: text
+    behavior: domain
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/category-ads-all.txt
+    path: ./ruleset/ads.txt
+    interval: 86400
+  malware:
+    type: http
+    format: text
+    behavior: domain
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/malware.txt
+    path: ./ruleset/malware.txt
+    interval: 86400
+  phishing:
+    type: http
+    format: text
+    behavior: domain
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/phishing.txt
+    path: ./ruleset/phishing.txt
+    interval: 86400
+  cryptominers:
+    type: http
+    format: text
+    behavior: domain
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/cryptominers.txt
+    path: ./ruleset/cryptominers.txt
+    interval: 86400
+  malware-ip:
+    type: http
+    format: text
+    behavior: ipcidr
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/malware-ip.txt
+    path: ./ruleset/malware-ip.txt
+    interval: 86400
+  phishing-ip:
+    type: http
+    format: text
+    behavior: ipcidr
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/phishing-ip.txt
+    path: ./ruleset/phishing-ip.txt
+    interval: 86400
+rules:
+- DOMAIN-SUFFIX,ir,DIRECT
+- DOMAIN,www.cloudflare.com,DIRECT
+- RULE-SET,ads,REJECT
+- RULE-SET,malware,REJECT
+- RULE-SET,malware-ip,REJECT
+- RULE-SET,phishing,REJECT
+- RULE-SET,phishing-ip,REJECT
+- RULE-SET,cryptominers,REJECT
+- RULE-SET,private,DIRECT
+- RULE-SET,ircidr,DIRECT
+- RULE-SET,iran_other,DIRECT
+- RULE-SET,apps,DIRECT
+- MATCH,Smart VPN

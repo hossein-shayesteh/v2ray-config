@@ -1,34 +1,428 @@
-name: Generate Clash Config
+name: Generate Clash Configuration
 
 on:
   push:
     branches: [main]
     paths:
-      - 'V2RayConfigs'
+      - "V2RayConfigs"
+  schedule:
+    # Run every 6 hours to keep configs fresh
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    # Allow manual trigger
 
 jobs:
   generate-config:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
 
-    - name: Install dependencies
-      run: |
-        python -m pip install pyyaml requests
+      - name: Cache Python dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
-    - name: Generate Clash config
-      run: python scripts/convert_proxies.py
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml requests
 
-    - name: Commit and push
-      run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "GitHub Actions"
-        git add generated/clashConfig.yaml
-        git commit -m "Update Clash configuration"
-        git push
+      - name: Download V2Ray configs
+        run: |
+          echo "Downloading V2Ray configurations..."
+          curl -fsSL "https://raw.githubusercontent.com/hossein-shayesteh/v2ray-config/refs/heads/main/V2RayConfigs" -o V2RayConfigs
+          echo "Downloaded $(wc -l < V2RayConfigs) lines"
+
+      - name: Validate input file
+        run: |
+          if [ ! -s V2RayConfigs ]; then
+            echo "❌ V2RayConfigs file is empty or doesn't exist"
+            exit 1
+          fi
+
+          echo "📊 File statistics:"
+          echo "   Total lines: $(wc -l < V2RayConfigs)"
+          echo "   VLESS URLs: $(grep -c '^vless://' V2RayConfigs || echo 0)"
+          echo "   VMess URLs: $(grep -c '^vmess://' V2RayConfigs || echo 0)"
+          echo "   Trojan URLs: $(grep -c '^trojan://' V2RayConfigs || echo 0)"
+
+      - name: Create Mihomo template if missing
+        run: |
+          if [ ! -f mihomo-config.json ]; then
+            echo "Creating Mihomo configuration template..."
+            cat > mihomo-config.json << 'EOF'
+          {
+            "mixed-port": 7890,
+            "ipv6": false,
+            "allow-lan": true,
+            "mode": "rule",
+            "log-level": "silent",
+            "geo-auto-update": true,
+            "geo-update-interval": 168,
+            "enable-process": true,
+            "find-process-mode": "strict",
+            "tcp-concurrent": true,
+            "profile": {
+              "store-selected": true,
+              "store-fake-ip": true
+            },
+            "sniffer": {
+              "enable": true,
+              "parse-pure-ip": true,
+              "force-dns-mapping": true,
+              "override-destination": false
+            },
+            "dns": {
+              "enable": true,
+              "listen": "0.0.0.0:1053",
+              "ipv6": false,
+              "respect-rules": true,
+              "use-system-hosts": false,
+              "enhanced-mode": "fake-ip",
+              "fake-ip-range": "198.18.0.1/16",
+              "fake-ip-filter-mode": "blacklist",
+              "fake-ip-filter": ["rule-set:private"],
+              "default-nameserver": ["8.8.8.8", "8.8.4.4"],
+              "nameserver": ["4.2.2.4", "1.1.1.1"],
+              "direct-nameserver": ["8.8.8.8", "8.8.4.4"],
+              "proxy-server-nameserver": ["4.2.2.4", "1.1.1.1"],
+              "fallback": [
+                "quic://8.8.8.8",
+                "quic://8.8.4.4",
+                "https://google.com/dns-query",
+                "https://8.8.8.8/dns-query"
+              ],
+              "fallback-filter": {
+                "ipcidr": ["10.10.34.34/29"]
+              }
+            },
+            "tun": {
+              "enable": true,
+              "stack": "gvisor",
+              "auto-route": true,
+              "auto-redirect": true,
+              "strict-route": true,
+              "dns-hijack": ["any:53", "tcp://any:53"]
+            },
+            "proxies": [
+              {
+                "name": "proxy1"
+              },
+              {
+                "name": "proxy2"
+              },
+              {
+                "name": "proxy3"
+              }
+            ],
+            "proxy-groups": [
+              {
+                "name": "Smart VPN",
+                "type": "select",
+                "lazy": true,
+                "icon": "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png",
+                "proxies": ["Auto", "Load Balancer", "proxy1", "proxy2", "proxy3"]
+              },
+              {
+                "name": "Auto",
+                "type": "url-test",
+                "icon": "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/EU.png",
+                "url": "http://gstatic.com/generate_204",
+                "lazy": true,
+                "interval": 120,
+                "tolerance": 200,
+                "hidden": true,
+                "proxies": ["proxy1", "proxy2", "proxy3"]
+              },
+              {
+                "name": "Load Balancer",
+                "type": "load-balance",
+                "strategy": "consistent-hashing",
+                "icon": "https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png",
+                "url": "http://gstatic.com/generate_204",
+                "lazy": true,
+                "interval": 120,
+                "tolerance": 200,
+                "hidden": true,
+                "proxies": ["proxy1", "proxy2", "proxy3"]
+              }
+            ],
+            "rule-providers": {
+              "private": {
+                "type": "http",
+                "format": "text",
+                "behavior": "ipcidr",
+                "url": "https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/private.txt",
+                "path": "./ruleset/private.txt",
+                "interval": 86400
+              },
+              "ircidr": {
+                "type": "http",
+                "format": "text",
+                "behavior": "ipcidr",
+                "url": "https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/ircidr.txt",
+                "path": "./ruleset/ircidr.txt",
+                "interval": 86400
+              },
+              "iran_other": {
+                "type": "http",
+                "format": "text",
+                "behavior": "domain",
+                "url": "https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules_other.txt",
+                "path": "./ruleset/iran_other.txt",
+                "interval": 86400
+              },
+              "apps": {
+                "type": "http",
+                "format": "text",
+                "behavior": "classical",
+                "url": "https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/apps.txt",
+                "path": "./ruleset/apps.txt",
+                "interval": 86400
+              },
+              "ads": {
+                "type": "http",
+                "format": "text",
+                "behavior": "domain",
+                "url": "https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/category-ads-all.txt",
+                "path": "./ruleset/ads.txt",
+                "interval": 86400
+              },
+              "malware": {
+                "type": "http",
+                "format": "text",
+                "behavior": "domain",
+                "url": "https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/malware.txt",
+                "path": "./ruleset/malware.txt",
+                "interval": 86400
+              },
+              "phishing": {
+                "type": "http",
+                "format": "text",
+                "behavior": "domain",
+                "url": "https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/phishing.txt",
+                "path": "./ruleset/phishing.txt",
+                "interval": 86400
+              },
+              "cryptominers": {
+                "type": "http",
+                "format": "text",
+                "behavior": "domain",
+                "url": "https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/cryptominers.txt",
+                "path": "./ruleset/cryptominers.txt",
+                "interval": 86400
+              },
+              "malware-ip": {
+                "type": "http",
+                "format": "text",
+                "behavior": "ipcidr",
+                "url": "https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/malware-ip.txt",
+                "path": "./ruleset/malware-ip.txt",
+                "interval": 86400
+              },
+              "phishing-ip": {
+                "type": "http",
+                "format": "text",
+                "behavior": "ipcidr",
+                "url": "https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/phishing-ip.txt",
+                "path": "./ruleset/phishing-ip.txt",
+                "interval": 86400
+              }
+            },
+            "rules": [
+              "DOMAIN-SUFFIX,ir,DIRECT",
+              "DOMAIN,www.cloudflare.com,DIRECT",
+              "RULE-SET,ads,REJECT",
+              "RULE-SET,malware,REJECT",
+              "RULE-SET,malware-ip,REJECT",
+              "RULE-SET,phishing,REJECT",
+              "RULE-SET,phishing-ip,REJECT",
+              "RULE-SET,cryptominers,REJECT",
+              "RULE-SET,private,DIRECT",
+              "RULE-SET,ircidr,DIRECT",
+              "RULE-SET,iran_other,DIRECT",
+              "RULE-SET,apps,DIRECT",
+              "MATCH,Smart VPN"
+            ]
+          }
+          EOF
+          fi
+
+      - name: Generate Mihomo configuration
+        run: |
+          echo "🔄 Converting proxy configurations using Mihomo template..."
+          python convert_proxies.py
+
+          if [ -f generated/clashConfig.yaml ]; then
+            echo "✅ Mihomo configuration generated successfully"
+            echo "📊 Generated file size: $(du -h generated/clashConfig.yaml | cut -f1)"
+            echo "🌐 Proxy count: $(grep -c 'type:' generated/clashConfig.yaml || echo 0)"
+            echo "🔍 Sample proxy names:"
+            grep -A1 "name:" generated/clashConfig.yaml | head -6 | grep "name:" | head -3
+          else
+            echo "❌ Failed to generate configuration"
+            exit 1
+          fi
+
+      - name: Validate generated config
+        run: |
+          echo "🔍 Validating generated configuration..."
+          python -c "
+          import yaml
+          try:
+              with open('generated/clashConfig.yaml', 'r') as f:
+                  config = yaml.safe_load(f)
+              print(f'✅ YAML is valid')
+              print(f'📊 Proxies: {len(config.get(\"proxies\", []))}')
+              print(f'🗂️  Groups: {len(config.get(\"proxy-groups\", []))}')
+              print(f'📋 Rules: {len(config.get(\"rules\", []))}')
+              
+              # Check if we have at least one proxy
+              if len(config.get('proxies', [])) == 0:
+                  print('⚠️  Warning: No proxies found in configuration')
+                  exit(1)
+                  
+          except Exception as e:
+              print(f'❌ YAML validation failed: {e}')
+              exit(1)
+          "
+
+      - name: Create/Update README
+        run: |
+          cat > generated/README.md << EOF
+          # Mihomo/Clash Meta Configuration
+
+          **Last Updated:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          **Generated By:** GitHub Actions
+          **Template:** Mihomo/Clash Meta optimized
+
+          ## 📊 Statistics
+          - **Total Proxies:** $(grep -c 'type:' generated/clashConfig.yaml || echo 0)
+          - **VLESS Proxies:** $(grep -c 'type: vless' generated/clashConfig.yaml || echo 0)
+          - **VMess Proxies:** $(grep -c 'type: vmess' generated/clashConfig.yaml || echo 0)
+          - **Trojan Proxies:** $(grep -c 'type: trojan' generated/clashConfig.yaml || echo 0)
+
+          ## 🚀 Usage
+
+          ### Mihomo (Clash Meta)
+          1. Download \`clashConfig.yaml\`
+          2. Import into Mihomo client
+          3. Enjoy optimized routing with Iranian rules!
+
+          ### Clash Premium/Meta Features
+          - ✅ TUN mode support
+          - ✅ Advanced DNS with fake-ip
+          - ✅ Process-based routing
+          - ✅ GeoIP auto-update
+          - ✅ Rule providers for Iranian sites
+          - ✅ Ad & malware blocking
+
+          ## 📱 Compatible Clients
+          - **Desktop:** Mihomo, Clash Verge, ClashX Pro
+          - **Android:** ClashMetaForAndroid, Clash for Android
+          - **iOS:** Stash, Shadowrocket (partial support)
+
+          ## 🌍 Proxy Naming Convention
+          Proxies are named in the format: \`🇮🇷 VLESS 01\`
+          Where:
+          - 🇮🇷 = Country flag emoji based on server location
+          - VLESS = Protocol type (VLESS/VMess/Trojan)
+          - 01 = Sequential number (01, 02, 03...)
+
+          ## 🛡️ Security Features
+          - Automatic ad/malware/phishing blocking
+          - Iranian domains routed directly (bypass proxy)
+          - Crypto-mining protection
+          - Privacy-focused DNS configuration
+
+          ## ⚠️ Important Notes
+          - Optimized for Iranian users with smart routing
+          - Auto-updates every 6 hours
+          - TUN mode requires admin privileges
+          - Some features require Clash Meta/Mihomo
+
+          ---
+
+          **Source:** [hossein-shayesteh/v2ray-config](https://github.com/hossein-shayesteh/v2ray-config)
+          **Iran Rules:** [Chocolate4U/Iran-clash-rules](https://github.com/Chocolate4U/Iran-clash-rules)
+          EOFconfig](https://github.com/hossein-shayesteh/v2ray-config)
+          **Iran Rules:** [Chocolate4U/Iran-clash-rules](https://github.com/Chocolate4U/Iran-clash-rules)
+          EOFconfig](https://github.com/hossein-shayesteh/v2ray-config)
+          EOF
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "GitHub Actions Bot"
+
+          # Add generated files
+          git add generated/
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "ℹ️  No changes to commit"
+          else
+            git commit -m "🤖 Auto-update Clash configuration
+            
+            - Updated: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+            - Proxies: $(grep -c 'type:' generated/clashConfig.yaml || echo 0)
+            - Workflow: ${{ github.workflow }}
+            - Commit: ${{ github.sha }}"
+            
+            git push
+            echo "✅ Changes committed and pushed successfully"
+          fi
+
+      - name: Create release (optional)
+        if: github.event_name == 'push'
+        run: |
+          # Create a release with the generated config
+          RELEASE_TAG="config-$(date +%Y%m%d-%H%M%S)"
+          PROXY_COUNT=$(grep -c 'type:' generated/clashConfig.yaml || echo 0)
+
+          # This would require additional setup for releases
+          echo "📦 Would create release: $RELEASE_TAG with $PROXY_COUNT proxies"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: clash-config
+          path: |
+            generated/clashConfig.yaml
+            generated/README.md
+          retention-days: 30
+
+      - name: Job summary
+        if: always()
+        run: |
+          echo "## 🎉 Mihomo Configuration Generation Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Metric | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Total Proxies | $(grep -c 'type:' generated/clashConfig.yaml 2>/dev/null || echo 0) |" >> $GITHUB_STEP_SUMMARY
+          echo "| VLESS | $(grep -c 'type: vless' generated/clashConfig.yaml 2>/dev/null || echo 0) |" >> $GITHUB_STEP_SUMMARY
+          echo "| VMess | $(grep -c 'type: vmess' generated/clashConfig.yaml 2>/dev/null || echo 0) |" >> $GITHUB_STEP_SUMMARY
+          echo "| Trojan | $(grep -c 'type: trojan' generated/clashConfig.yaml 2>/dev/null || echo 0) |" >> $GITHUB_STEP_SUMMARY
+          echo "| File Size | $(du -h generated/clashConfig.yaml 2>/dev/null | cut -f1 || echo 'N/A') |" >> $GITHUB_STEP_SUMMARY
+          echo "| Template | Mihomo/Clash Meta optimized |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 🌍 Sample Proxy Names" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          grep -A1 "name:" generated/clashConfig.yaml 2>/dev/null | head -6 | grep "name:" | head -3 | sed 's/.*name: //' >> $GITHUB_STEP_SUMMARY || echo "No proxies found" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Mihomo configuration ready for use!" >> $GITHUB_STEP_SUMMARY
