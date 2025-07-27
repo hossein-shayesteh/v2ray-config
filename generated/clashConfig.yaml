@@ -1,0 +1,690 @@
+allow-lan: true
+dns:
+  default-nameserver:
+  - 8.8.8.8
+  - 8.8.4.4
+  direct-nameserver:
+  - 8.8.8.8
+  - 8.8.4.4
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - rule-set:private
+  fake-ip-filter-mode: blacklist
+  fake-ip-range: 198.18.0.1/16
+  fallback:
+  - quic://8.8.8.8
+  - quic://8.8.4.4
+  - https://google.com/dns-query
+  - https://8.8.8.8/dns-query
+  fallback-filter:
+    ipcidr:
+    - 10.10.34.34/29
+  ipv6: false
+  listen: 0.0.0.0:1053
+  nameserver:
+  - 4.2.2.4
+  - 1.1.1.1
+  proxy-server-nameserver:
+  - 4.2.2.4
+  - 1.1.1.1
+  respect-rules: true
+  use-system-hosts: false
+enable-process: true
+find-process-mode: strict
+geo-auto-update: true
+geo-update-interval: 168
+ipv6: false
+log-level: silent
+mixed-port: 7890
+mode: rule
+profile:
+  store-fake-ip: true
+  store-selected: true
+proxies:
+- name: 🇨🇦 CA VLESS 01
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 80
+  server: confident-club.seotoolsforyou.co.uk
+  servername: confident-club.seotoolsforyou.co.uk
+  type: vless
+  uuid: 9926ee97-4398-48dd-b263-2863c62f5c41
+- name: 🇫🇷 FR VLESS 02
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 443
+  server: 185.193.89.61
+  servername: 185.193.89.61
+  type: vless
+  uuid: e134f4a5-346e-493f-b74a-988ef7a4ff27
+- name: 🇨🇦 CA VLESS 03
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 80
+  server: handsome-device.oneeat.co
+  servername: handsome-device.oneeat.co
+  type: vless
+  uuid: 2ad87f95-7a0b-4018-8497-5ecaac2f0ddf
+- name: 🇺🇸 US VLESS 04
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 443
+  server: 72.14.190.88
+  servername: 72.14.190.88
+  type: vless
+  uuid: bc310b8d-fbe8-4c55-970b-be77816fceea
+- name: 🇨🇦 CA VLESS 05
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 80
+  server: brainy-party.seotoolsforyou.co.uk
+  servername: brainy-party.seotoolsforyou.co.uk
+  type: vless
+  uuid: 34797f17-09a1-400c-9f4b-275718d62a0f
+- name: 🇨🇦 CA VLESS 06
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 443
+  server: www.meter.net
+  servername: www.meter.net
+  type: vless
+  uuid: 1b368bf6-5aac-413c-a77c-229fb984d5ae
+- name: 🇺🇸 US VLESS 07
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 80
+  server: 45.8.146.207
+  servername: 45.8.146.207
+  type: vless
+  uuid: a6c4db3e-7785-429e-8bc5-9eaf7b1a79b1
+- name: 🇨🇦 CA VLESS 08
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 2053
+  server: wouldyoumarriemepleasefuckthesystem2.siasia.ir
+  servername: wouldyoumarriemepleasefuckthesystem2.siasia.ir
+  type: vless
+  uuid: 3891b3ce-bb3a-45bf-bd8e-90e2487d121e
+- name: 🇨🇦 CA VLESS 09
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 80
+  server: grumpy-building.seotoolsforyou.co.uk
+  servername: grumpy-building.seotoolsforyou.co.uk
+  type: vless
+  uuid: 935c990a-9bcc-484b-86a2-2a402f9ad1d4
+- name: 🇨🇦 CA VLESS 10
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 80
+  server: narrow-passenger.oneeat.co
+  servername: narrow-passenger.oneeat.co
+  type: vless
+  uuid: 5a12794b-2125-46d7-a748-927a989faa04
+- name: 🇨🇦 CA VLESS 11
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 443
+  server: 92.53.188.36
+  servername: 92.53.188.36
+  type: vless
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+- name: 🇩🇪 DE VLESS 12
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 8443
+  server: 91.99.222.180
+  servername: 91.99.222.180
+  type: vless
+  uuid: bb7b030f-fd37-488a-be1f-1a26d874cb26
+- name: 🇬🇧 GB VLESS 13
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 443
+  server: 95.164.18.29
+  servername: 95.164.18.29
+  type: vless
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+- alterId: 0
+  cipher: none
+  name: 🇨🇦 CA VMESS 14
+  network: ws
+  port: 2083
+  server: www.meter.net
+  tls: true
+  type: vmess
+  uuid: d218dfe5-fae6-408e-b615-8666df7f0924
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 DE VMESS 15
+  network: ws
+  port: 8443
+  server: ov-germany7.09vpn.com
+  tls: true
+  type: vmess
+  uuid: 8b7ec98d-c291-4034-9719-e6d62051636a
+- alterId: 0
+  cipher: none
+  name: 🇨🇦 CA VMESS 16
+  network: ws
+  port: 2083
+  server: www.meter.net
+  tls: true
+  type: vmess
+  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
+- name: 🇨🇦 CA VLESS 17
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 443
+  server: 172.67.150.132
+  servername: 172.67.150.132
+  type: vless
+  uuid: 3ed60fc0-f13d-490a-a244-c827a8a8b1e5
+- name: 🇫🇷 FR VLESS 18
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 4450
+  server: 109.176.244.129
+  servername: 109.176.244.129
+  type: vless
+  uuid: c11bc9cb-1a58-48c7-b118-67d1dcf8af91
+- alterId: 0
+  cipher: none
+  name: 🇨🇦 CA VMESS 19
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  tls: true
+  type: vmess
+  uuid: e2fb28b8-a457-4bd2-801e-56fdcccbd88e
+- name: 🇨🇦 CA VLESS 20
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 443
+  server: 172.67.220.32
+  servername: 172.67.220.32
+  type: vless
+  uuid: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 DE VMESS 21
+  network: ws
+  port: 80
+  server: 51.68.191.233
+  tls: false
+  type: vmess
+  uuid: f0eda072-9ae8-494c-a495-215fa5729467
+- name: 🇫🇷 FR VLESS 22
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 8080
+  server: hp.mastertunnel.shop
+  servername: hp.mastertunnel.shop
+  type: vless
+  uuid: 87b9318e-60d7-4d3f-907f-e74cb7607b59
+- name: 🇫🇷 FR VLESS 23
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 8880
+  server: 185.231.205.139
+  servername: 185.231.205.139
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 🇬🇧 GB VLESS 24
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 2082
+  server: 95.164.18.16
+  servername: 95.164.18.16
+  type: vless
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+- name: 🇬🇧 GB VLESS 25
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 2082
+  server: 77.91.101.228
+  servername: 77.91.101.228
+  type: vless
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+- name: 🇨🇦 CA VLESS 26
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 2087
+  server: 104.17.147.22
+  servername: 104.17.147.22
+  type: vless
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+- name: 🇨🇦 CA VLESS 27
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 443
+  server: 104.26.2.186
+  servername: 104.26.2.186
+  type: vless
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+- name: 🇬🇧 GB VLESS 28
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 2052
+  server: 95.164.18.29
+  servername: 95.164.18.29
+  type: vless
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+- name: 🇬🇧 GB VLESS 29
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 2053
+  server: 95.164.18.39
+  servername: 95.164.18.39
+  type: vless
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+- name: 🇨🇦 CA VLESS 30
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 443
+  server: 172.67.150.132
+  servername: 172.67.150.132
+  type: vless
+  uuid: 3ed60fc0-f13d-490a-a244-c827a8a8b1e5
+- alterId: 0
+  cipher: auto
+  name: 🇨🇦 CA VMESS 31
+  network: ws
+  port: 2053
+  server: 104.21.3.189
+  tls: true
+  type: vmess
+  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
+- name: 🇨🇦 CA VLESS 32
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 2096
+  server: ipw.gfdv54cvghhgfhgj-njhgj64.info
+  servername: ipw.gfdv54cvghhgfhgj-njhgj64.info
+  type: vless
+  uuid: 49d6d5dd-bc9b-4ff9-ade9-3b9c25ca5f25
+- name: 🇨🇦 CA VLESS 33
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 8080
+  server: www.speedtest.net.cdn.cloudflare.net
+  servername: www.speedtest.net.cdn.cloudflare.net
+  type: vless
+  uuid: 813d7c7e-d2ea-460f-9bf7-e6fa6a073b67
+- name: 🇨🇦 CA VLESS 34
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 80
+  server: communal-loss.oneeat.co
+  servername: communal-loss.oneeat.co
+  type: vless
+  uuid: a2af50d9-09c7-4a44-90d0-42da35923e9e
+- name: 🇺🇸 US VLESS 35
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 80
+  server: dl1-fi-cdn.easy-upload.org
+  servername: dl1-fi-cdn.easy-upload.org
+  type: vless
+  uuid: ee2bb495-2632-445b-b1f8-3c476a50b78b
+- alterId: 0
+  cipher: none
+  name: 🇺🇸 US VMESS 36
+  network: tcp
+  port: 1901
+  server: 159.203.138.123
+  tls: false
+  type: vmess
+  uuid: dd37eb89-a92a-4102-af35-eac7f2a95367
+- alterId: 0
+  cipher: auto
+  name: 🇮🇷 IR VMESS 37
+  network: ws
+  port: 8443
+  server: 2.188.219.43
+  tls: false
+  type: vmess
+  uuid: b2e38621-035b-43f8-84a5-e92160762fc3
+- name: 🇫🇷 FR VLESS 38
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 8880
+  server: 95.164.45.70
+  servername: 95.164.45.70
+  type: vless
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 🇩🇪 DE VLESS 39
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 55900
+  server: aiteam.lonup.org
+  servername: aiteam.lonup.org
+  type: vless
+  uuid: d196897a-006e-4454-9478-67b6fd8ce021
+- alterId: 0
+  cipher: none
+  name: 🇱🇻 LV VMESS 40
+  network: ws
+  port: 8443
+  server: 216.173.69.250
+  tls: false
+  type: vmess
+  uuid: 91382092-2330-455b-8a1c-9c129cfe661a
+- name: 🇬🇧 GB VLESS 41
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 8443
+  server: 95.164.18.16
+  servername: 95.164.18.16
+  type: vless
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+- name: 🇺🇸 US VLESS 42
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 443
+  server: 5.181.171.2
+  servername: 5.181.171.2
+  type: vless
+  uuid: 8e6acce9-8b56-7190-d491-7d84f8189e26
+- alterId: 0
+  cipher: auto
+  name: 🇨🇦 CA VMESS 43
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  tls: true
+  type: vmess
+  uuid: b7acf44f-3c3a-430c-8ed0-fb64ccc9a13a
+- name: 🇳🇱 NL VLESS 44
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 443
+  server: 77.105.140.246
+  servername: 77.105.140.246
+  type: vless
+  uuid: 33fb7509-1606-4d9c-b506-77ace6016132
+- name: 🇺🇸 US VLESS 45
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 443
+  server: 172.105.135.204
+  servername: 172.105.135.204
+  type: vless
+  uuid: 0d482f53-d06f-4583-80b2-b12c9072afc6
+- alterId: 0
+  cipher: none
+  name: 🇮🇷 IR VMESS 46
+  network: ws
+  port: 8443
+  server: 2.188.219.43
+  tls: false
+  type: vmess
+  uuid: b2e38621-035b-43f8-84a5-e92160762fc3
+- name: 🇩🇪 DE VLESS 47
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 443
+  server: 91.99.178.25
+  servername: 91.99.178.25
+  type: vless
+  uuid: c39a101c-0a7b-4940-8e6a-f8346d70b24b
+- name: 🇺🇸 US VLESS 48
+  network: '%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3'
+  port: 57403
+  server: 15.204.199.122
+  servername: 15.204.199.122
+  type: vless
+  uuid: 1c22f9ec-4677-4a53-921a-a87c63df37d5
+- alterId: 0
+  cipher: none
+  name: 🇺🇸 US VMESS 49
+  network: ws
+  port: 8443
+  server: 195.211.99.143
+  tls: false
+  type: vmess
+  uuid: 2e514a36-7ae8-4b6a-9e36-9c20e7228824
+proxy-groups:
+- icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
+  lazy: true
+  name: Smart VPN
+  proxies:
+  - 🇨🇦 CA VLESS 01
+  - 🇫🇷 FR VLESS 02
+  - 🇨🇦 CA VLESS 03
+  - 🇺🇸 US VLESS 04
+  - 🇨🇦 CA VLESS 05
+  - 🇨🇦 CA VLESS 06
+  - 🇺🇸 US VLESS 07
+  - 🇨🇦 CA VLESS 08
+  - 🇨🇦 CA VLESS 09
+  - 🇨🇦 CA VLESS 10
+  - 🇨🇦 CA VLESS 11
+  - 🇩🇪 DE VLESS 12
+  - 🇬🇧 GB VLESS 13
+  - 🇨🇦 CA VMESS 14
+  - 🇩🇪 DE VMESS 15
+  - 🇨🇦 CA VMESS 16
+  - 🇨🇦 CA VLESS 17
+  - 🇫🇷 FR VLESS 18
+  - 🇨🇦 CA VMESS 19
+  - 🇨🇦 CA VLESS 20
+  - 🇩🇪 DE VMESS 21
+  - 🇫🇷 FR VLESS 22
+  - 🇫🇷 FR VLESS 23
+  - 🇬🇧 GB VLESS 24
+  - 🇬🇧 GB VLESS 25
+  - 🇨🇦 CA VLESS 26
+  - 🇨🇦 CA VLESS 27
+  - 🇬🇧 GB VLESS 28
+  - 🇬🇧 GB VLESS 29
+  - 🇨🇦 CA VLESS 30
+  - 🇨🇦 CA VMESS 31
+  - 🇨🇦 CA VLESS 32
+  - 🇨🇦 CA VLESS 33
+  - 🇨🇦 CA VLESS 34
+  - 🇺🇸 US VLESS 35
+  - 🇺🇸 US VMESS 36
+  - 🇮🇷 IR VMESS 37
+  - 🇫🇷 FR VLESS 38
+  - 🇩🇪 DE VLESS 39
+  - 🇱🇻 LV VMESS 40
+  - 🇬🇧 GB VLESS 41
+  - 🇺🇸 US VLESS 42
+  - 🇨🇦 CA VMESS 43
+  - 🇳🇱 NL VLESS 44
+  - 🇺🇸 US VLESS 45
+  - 🇮🇷 IR VMESS 46
+  - 🇩🇪 DE VLESS 47
+  - 🇺🇸 US VLESS 48
+  - 🇺🇸 US VMESS 49
+  type: select
+- hidden: true
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/EU.png
+  interval: 120
+  lazy: true
+  name: Auto
+  proxies:
+  - 🇨🇦 CA VLESS 01
+  - 🇫🇷 FR VLESS 02
+  - 🇨🇦 CA VLESS 03
+  - 🇺🇸 US VLESS 04
+  - 🇨🇦 CA VLESS 05
+  - 🇨🇦 CA VLESS 06
+  - 🇺🇸 US VLESS 07
+  - 🇨🇦 CA VLESS 08
+  - 🇨🇦 CA VLESS 09
+  - 🇨🇦 CA VLESS 10
+  - 🇨🇦 CA VLESS 11
+  - 🇩🇪 DE VLESS 12
+  - 🇬🇧 GB VLESS 13
+  - 🇨🇦 CA VMESS 14
+  - 🇩🇪 DE VMESS 15
+  - 🇨🇦 CA VMESS 16
+  - 🇨🇦 CA VLESS 17
+  - 🇫🇷 FR VLESS 18
+  - 🇨🇦 CA VMESS 19
+  - 🇨🇦 CA VLESS 20
+  - 🇩🇪 DE VMESS 21
+  - 🇫🇷 FR VLESS 22
+  - 🇫🇷 FR VLESS 23
+  - 🇬🇧 GB VLESS 24
+  - 🇬🇧 GB VLESS 25
+  - 🇨🇦 CA VLESS 26
+  - 🇨🇦 CA VLESS 27
+  - 🇬🇧 GB VLESS 28
+  - 🇬🇧 GB VLESS 29
+  - 🇨🇦 CA VLESS 30
+  - 🇨🇦 CA VMESS 31
+  - 🇨🇦 CA VLESS 32
+  - 🇨🇦 CA VLESS 33
+  - 🇨🇦 CA VLESS 34
+  - 🇺🇸 US VLESS 35
+  - 🇺🇸 US VMESS 36
+  - 🇮🇷 IR VMESS 37
+  - 🇫🇷 FR VLESS 38
+  - 🇩🇪 DE VLESS 39
+  - 🇱🇻 LV VMESS 40
+  - 🇬🇧 GB VLESS 41
+  - 🇺🇸 US VLESS 42
+  - 🇨🇦 CA VMESS 43
+  - 🇳🇱 NL VLESS 44
+  - 🇺🇸 US VLESS 45
+  - 🇮🇷 IR VMESS 46
+  - 🇩🇪 DE VLESS 47
+  - 🇺🇸 US VLESS 48
+  - 🇺🇸 US VMESS 49
+  tolerance: 200
+  type: url-test
+  url: http://gstatic.com/generate_204
+- hidden: true
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png
+  interval: 120
+  lazy: true
+  name: Load Balancer
+  proxies:
+  - 🇨🇦 CA VLESS 01
+  - 🇫🇷 FR VLESS 02
+  - 🇨🇦 CA VLESS 03
+  - 🇺🇸 US VLESS 04
+  - 🇨🇦 CA VLESS 05
+  - 🇨🇦 CA VLESS 06
+  - 🇺🇸 US VLESS 07
+  - 🇨🇦 CA VLESS 08
+  - 🇨🇦 CA VLESS 09
+  - 🇨🇦 CA VLESS 10
+  - 🇨🇦 CA VLESS 11
+  - 🇩🇪 DE VLESS 12
+  - 🇬🇧 GB VLESS 13
+  - 🇨🇦 CA VMESS 14
+  - 🇩🇪 DE VMESS 15
+  - 🇨🇦 CA VMESS 16
+  - 🇨🇦 CA VLESS 17
+  - 🇫🇷 FR VLESS 18
+  - 🇨🇦 CA VMESS 19
+  - 🇨🇦 CA VLESS 20
+  - 🇩🇪 DE VMESS 21
+  - 🇫🇷 FR VLESS 22
+  - 🇫🇷 FR VLESS 23
+  - 🇬🇧 GB VLESS 24
+  - 🇬🇧 GB VLESS 25
+  - 🇨🇦 CA VLESS 26
+  - 🇨🇦 CA VLESS 27
+  - 🇬🇧 GB VLESS 28
+  - 🇬🇧 GB VLESS 29
+  - 🇨🇦 CA VLESS 30
+  - 🇨🇦 CA VMESS 31
+  - 🇨🇦 CA VLESS 32
+  - 🇨🇦 CA VLESS 33
+  - 🇨🇦 CA VLESS 34
+  - 🇺🇸 US VLESS 35
+  - 🇺🇸 US VMESS 36
+  - 🇮🇷 IR VMESS 37
+  - 🇫🇷 FR VLESS 38
+  - 🇩🇪 DE VLESS 39
+  - 🇱🇻 LV VMESS 40
+  - 🇬🇧 GB VLESS 41
+  - 🇺🇸 US VLESS 42
+  - 🇨🇦 CA VMESS 43
+  - 🇳🇱 NL VLESS 44
+  - 🇺🇸 US VLESS 45
+  - 🇮🇷 IR VMESS 46
+  - 🇩🇪 DE VLESS 47
+  - 🇺🇸 US VLESS 48
+  - 🇺🇸 US VMESS 49
+  strategy: consistent-hashing
+  tolerance: 200
+  type: load-balance
+  url: http://gstatic.com/generate_204
+rule-providers:
+  Pro:
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/pro.txt
+    type: http
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/nsfw.txt
+  ads:
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/ads.txt
+    type: http
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/category-ads-all.txt
+  apps:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/apps.txt
+    type: http
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/apps.txt
+  cryptominers:
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/cryptominers.txt
+    type: http
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/cryptominers.txt
+  iran_other:
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/iran_other.txt
+    type: http
+    url: https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/clash_rules_other.txt
+  ircidr:
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/ircidr.txt
+    type: http
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/ircidr.txt
+  malware:
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/malware.txt
+    type: http
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/malware.txt
+  malware-ip:
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/malware-ip.txt
+    type: http
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/malware-ip.txt
+  phishing:
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/phishing.txt
+    type: http
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/phishing.txt
+  phishing-ip:
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/phishing-ip.txt
+    type: http
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/phishing-ip.txt
+  private:
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/private.txt
+    type: http
+    url: https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/private.txt
+rules:
+- DOMAIN-SUFFIX,ir,DIRECT
+- DOMAIN,www.cloudflare.com,DIRECT
+- RULE-SET,ads,REJECT
+- RULE-SET,malware,REJECT
+- RULE-SET,malware-ip,REJECT
+- RULE-SET,phishing,REJECT
+- RULE-SET,phishing-ip,REJECT
+- RULE-SET,cryptominers,REJECT
+- RULE-SET,private,DIRECT
+- RULE-SET,ircidr,DIRECT
+- RULE-SET,iran_other,DIRECT
+- RULE-SET,apps,DIRECT
+- MATCH,Smart VPN
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  override-destination: false
+  parse-pure-ip: true
+tcp-concurrent: true
+tun:
+  auto-redirect: true
+  auto-route: true
+  dns-hijack:
+  - any:53
+  - tcp://any:53
+  enable: true
+  stack: gvisor
+  strict-route: true
