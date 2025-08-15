@@ -59,498 +59,6 @@ tun:
 proxies:
 - name: 🇩🇪 VLESS 01
   type: vless
-  server: 212.95.34.4
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.4
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇬🇧 VLESS 02
-  type: vless
-  server: 5.180.30.80
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5.180.30.80
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇳🇱 VLESS 03
-  type: vless
-  server: 45.12.145.209
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.145.209
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 04
-  type: vless
-  server: 212.95.34.14
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.14
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 05
-  type: vless
-  server: 212.95.34.32
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.32
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇨🇦 VLESS 06
-  type: vless
-  server: f10.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: f10.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇳🇱 VLESS 07
-  type: vless
-  server: 45.14.245.122
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.14.245.122
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇳🇱 VLESS 08
-  type: vless
-  server: 45.12.145.205
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.145.205
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 09
-  type: vless
-  server: 94.131.9.240
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.240
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇳🇱 VLESS 10
-  type: vless
-  server: 45.12.145.239
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.145.239
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 11
-  type: vless
-  server: 94.131.9.218
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.218
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇳🇱 VLESS 12
-  type: vless
-  server: 45.67.35.83
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.67.35.83
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇨🇦 VLESS 13
-  type: vless
-  server: s2.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: s2.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 14
-  type: vless
-  server: 94.131.9.240
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.240
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇬🇧 VLESS 15
-  type: vless
-  server: 5.180.30.44
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5.180.30.44
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 16
-  type: vless
-  server: 212.95.34.23
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.23
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 VLESS 17
-  type: vless
-  server: 92.118.233.103
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.103
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇬🇧 VLESS 18
-  type: vless
-  server: 5.180.30.88
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5.180.30.88
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 19
-  type: vless
-  server: 86.104.74.171
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 86.104.74.171
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇳🇱 VLESS 20
-  type: vless
-  server: 45.67.35.88
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.67.35.88
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇬🇧 VLESS 21
-  type: vless
-  server: 5.180.30.32
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5.180.30.32
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 22
-  type: vless
-  server: 86.104.74.171
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 86.104.74.171
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇳🇱 VLESS 23
-  type: vless
-  server: 45.12.130.250
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.130.250
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇬🇧 VLESS 24
-  type: vless
-  server: 5.180.30.100
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5.180.30.100
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 25
-  type: vless
-  server: 94.131.9.159
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.159
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇨🇦 VLESS 26
-  type: vless
-  server: s4.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: s4.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 27
-  type: vless
-  server: 86.104.74.229
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 86.104.74.229
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 28
-  type: vless
-  server: 74.119.192.12
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 74.119.192.12
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 29
-  type: vless
-  server: 212.95.34.6
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.6
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 30
-  type: vless
-  server: 212.95.34.9
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 31
-  type: vless
-  server: 2.56.126.190
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.56.126.190
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 32
-  type: vless
-  server: 212.95.34.30
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.30
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 33
-  type: vless
-  server: 212.95.34.26
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.26
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 34
-  type: vless
-  server: 94.131.9.159
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.159
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇬🇧 VLESS 35
-  type: vless
-  server: 5.180.30.86
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5.180.30.86
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 36
-  type: vless
-  server: 94.131.9.218
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.218
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 37
-  type: vless
-  server: 86.104.74.229
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 86.104.74.229
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 38
-  type: vless
-  server: 94.131.9.229
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.229
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇨🇦 VLESS 39
-  type: vless
-  server: s3.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: s3.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 40
-  type: vless
-  server: 45.14.247.217
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.14.247.217
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 41
-  type: vless
-  server: 2.56.126.190
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.56.126.190
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 42
-  type: vless
   server: 212.95.34.11
   port: 443
   uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
@@ -561,739 +69,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇫🇷 VLESS 43
-  type: vless
-  server: 94.131.9.239
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.239
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 44
-  type: vless
-  server: 94.131.9.229
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.229
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 45
-  type: vless
-  server: 86.104.74.171
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 86.104.74.171
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 VLESS 46
-  type: vless
-  server: 92.118.233.194
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.194
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 47
-  type: vless
-  server: 212.95.34.16
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.16
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 48
-  type: vless
-  server: 94.131.9.239
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.239
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 49
-  type: vless
-  server: 212.95.34.15
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.15
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 50
-  type: vless
-  server: 212.95.34.20
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.20
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 51
-  type: vless
-  server: 94.131.9.218
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.218
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 52
-  type: vless
-  server: 45.12.133.143
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.133.143
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇨🇦 VLESS 53
-  type: vless
-  server: f1.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: f1.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 54
-  type: vless
-  server: 86.104.74.207
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 86.104.74.207
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 55
-  type: vless
-  server: 212.95.34.25
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.25
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 VLESS 56
-  type: vless
-  server: 92.118.233.103
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.103
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 57
-  type: vless
-  server: 45.14.247.158
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.14.247.158
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 58
-  type: vless
-  server: 212.95.34.24
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.24
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 59
-  type: vless
-  server: 94.131.9.230
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.230
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 60
-  type: vless
-  server: 2.56.126.30
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.56.126.30
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 61
-  type: vless
-  server: 94.131.9.159
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.159
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 62
-  type: vless
-  server: 212.95.34.10
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.10
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 63
-  type: vless
-  server: 45.12.133.143
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.133.143
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 64
-  type: vless
-  server: n8.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n8.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 65
-  type: vless
-  server: 2.56.126.190
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.56.126.190
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 66
-  type: vless
-  server: 2.56.126.45
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.56.126.45
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 67
-  type: vless
-  server: 45.12.138.60
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.138.60
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 VLESS 68
-  type: vless
-  server: 92.118.233.103
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.103
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 69
-  type: vless
-  server: 212.95.34.19
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.19
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 70
-  type: vless
-  server: 45.83.129.58
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.83.129.58
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 71
-  type: vless
-  server: 5.180.30.47
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5.180.30.47
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 72
-  type: vless
-  server: 212.95.34.29
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.29
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 73
-  type: vless
-  server: 45.12.133.143
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.133.143
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 74
-  type: vless
-  server: 45.12.133.132
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.133.132
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 75
-  type: vless
-  server: 5.180.30.79
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5.180.30.79
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 76
-  type: vless
-  server: 212.95.34.31
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.31
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 77
-  type: vless
-  server: f9.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: f9.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 78
-  type: vless
-  server: 212.95.34.27
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.27
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 79
-  type: vless
-  server: 94.131.9.240
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.240
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 80
-  type: vless
-  server: 94.131.9.229
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.229
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 81
-  type: vless
-  server: 212.95.34.5
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.5
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 82
-  type: vless
-  server: 45.14.247.3
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.14.247.3
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 83
-  type: vless
-  server: 86.104.74.207
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 86.104.74.207
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 84
-  type: vless
-  server: 45.12.145.52
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.145.52
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 85
-  type: vless
-  server: 2.56.126.30
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.56.126.30
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 86
-  type: vless
-  server: 5.180.30.78
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5.180.30.78
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 87
-  type: vless
-  server: 94.131.9.157
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.157
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 88
-  type: vless
-  server: 92.118.233.240
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.240
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 89
-  type: vless
-  server: 2.56.126.45
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.56.126.45
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 90
-  type: vless
-  server: 212.95.34.13
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.13
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 91
-  type: vless
-  server: 2.56.126.45
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.56.126.45
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 92
-  type: vless
-  server: 212.95.34.12
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.12
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 93
-  type: vless
-  server: 74.119.192.12
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 74.119.192.12
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 94
-  type: vless
-  server: 94.131.9.216
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.216
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 95
-  type: vless
-  server: n3.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n3.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 96
-  type: vless
-  server: 92.118.233.104
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.104
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 97
-  type: vless
-  server: 94.131.9.217
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.217
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 98
-  type: vless
-  server: 45.12.138.97
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.138.97
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 99
-  type: vless
-  server: 94.131.9.217
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.217
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 100
-  type: vless
-  server: 5.180.30.67
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5.180.30.67
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 101
-  type: vless
-  server: 92.118.233.107
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.107
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 102
-  type: vless
-  server: 45.14.247.217
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.14.247.217
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 103
-  type: vless
-  server: 45.83.129.58
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.83.129.58
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 104
+- name: 🇩🇪 VLESS 02
   type: vless
   server: 212.95.34.28
   port: 443
@@ -1305,151 +81,19 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🌍 VLESS 105
+- name: 🇩🇪 VLESS 03
   type: vless
-  server: 94.131.9.157
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.157
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 106
-  type: vless
-  server: 92.118.233.110
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.110
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 107
-  type: vless
-  server: 212.95.34.8
+  server: 212.95.34.17
   port: 443
   uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 212.95.34.8
+  servername: 212.95.34.17
   network: ws
   ws-opts:
     path: /
-- name: 🌍 VLESS 108
-  type: vless
-  server: 92.118.233.109
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.109
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 109
-  type: vless
-  server: 92.118.233.104
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.104
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 VLESS 110
-  type: vless
-  server: 86.104.74.229
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 86.104.74.229
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 111
-  type: vless
-  server: 212.95.34.18
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.18
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 112
-  type: vless
-  server: 94.131.9.217
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.217
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 113
-  type: vless
-  server: 92.118.233.113
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.113
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 114
-  type: vless
-  server: 45.14.247.86
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.14.247.86
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 115
-  type: vless
-  server: 92.118.233.115
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.115
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 116
-  type: vless
-  server: 45.12.133.58
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.133.58
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 117
+- name: 🇩🇪 VLESS 04
   type: vless
   server: 212.95.34.21
   port: 443
@@ -1461,7 +105,175 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🌍 VLESS 118
+- name: 🇩🇪 VLESS 05
+  type: vless
+  server: 212.95.34.30
+  port: 443
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 212.95.34.30
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 VLESS 06
+  type: vless
+  server: 212.95.34.20
+  port: 443
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 212.95.34.20
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 VLESS 07
+  type: vless
+  server: 212.95.34.4
+  port: 443
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 212.95.34.4
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 VLESS 08
+  type: vless
+  server: 212.95.34.6
+  port: 443
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 212.95.34.6
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 VLESS 09
+  type: vless
+  server: 212.95.34.8
+  port: 443
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 212.95.34.8
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 VLESS 10
+  type: vless
+  server: 212.95.34.9
+  port: 443
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 212.95.34.9
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 VLESS 11
+  type: vless
+  server: 212.95.34.10
+  port: 443
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 212.95.34.10
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 VLESS 12
+  type: vless
+  server: 212.95.34.12
+  port: 443
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 212.95.34.12
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 VLESS 13
+  type: vless
+  server: 212.95.34.13
+  port: 443
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 212.95.34.13
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 VLESS 14
+  type: vless
+  server: 212.95.34.14
+  port: 443
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 212.95.34.14
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 VLESS 15
+  type: vless
+  server: 212.95.34.15
+  port: 443
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 212.95.34.15
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 VLESS 16
+  type: vless
+  server: 212.95.34.16
+  port: 443
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 212.95.34.16
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 VLESS 17
+  type: vless
+  server: 212.95.34.18
+  port: 443
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 212.95.34.18
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 VLESS 18
+  type: vless
+  server: 212.95.34.19
+  port: 443
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 212.95.34.19
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 VLESS 19
   type: vless
   server: 212.95.34.22
   port: 443
@@ -1473,543 +285,75 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🌍 VLESS 119
+- name: 🇩🇪 VLESS 20
   type: vless
-  server: 45.12.138.60
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.138.60
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 120
-  type: vless
-  server: n7.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n7.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 121
-  type: vless
-  server: 2.56.126.30
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.56.126.30
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 122
-  type: vless
-  server: 45.14.247.217
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.14.247.217
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 123
-  type: vless
-  server: 45.14.247.86
+  server: 212.95.34.24
   port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 45.14.247.86
+  servername: 212.95.34.24
   network: ws
   ws-opts:
     path: /
-- name: 🌍 VLESS 124
+- name: 🇩🇪 VLESS 21
   type: vless
-  server: 94.131.9.157
+  server: 212.95.34.25
   port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 94.131.9.157
+  servername: 212.95.34.25
   network: ws
   ws-opts:
     path: /
-- name: 🌍 VLESS 125
+- name: 🇩🇪 VLESS 22
   type: vless
-  server: f2.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: f2.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 126
-  type: vless
-  server: 45.12.133.58
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.133.58
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 VLESS 127
-  type: vless
-  server: 92.118.233.194
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.194
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 128
-  type: vless
-  server: 45.12.133.132
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.133.132
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 129
-  type: vless
-  server: n5.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n5.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 130
-  type: vless
-  server: 92.118.233.107
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.107
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 131
-  type: vless
-  server: 45.14.247.86
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.14.247.86
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 132
-  type: vless
-  server: 94.131.9.216
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.216
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 133
-  type: vless
-  server: 77.91.73.188
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 77.91.73.188
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 134
-  type: vless
-  server: 77.91.73.188
+  server: 212.95.34.26
   port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 77.91.73.188
+  servername: 212.95.34.26
   network: ws
   ws-opts:
     path: /
-- name: 🌍 VLESS 135
+- name: 🇩🇪 VLESS 23
   type: vless
-  server: 45.12.138.60
+  server: 212.95.34.29
   port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 45.12.138.60
+  servername: 212.95.34.29
   network: ws
   ws-opts:
     path: /
-- name: 🌍 VLESS 136
+- name: 🇩🇪 VLESS 24
   type: vless
-  server: b6.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: b6.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 137
-  type: vless
-  server: 45.83.129.58
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.83.129.58
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 138
-  type: vless
-  server: 45.12.138.97
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.138.97
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 139
-  type: vless
-  server: 77.91.73.188
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 77.91.73.188
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 140
-  type: vless
-  server: 92.118.233.113
+  server: 212.95.34.31
   port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 92.118.233.113
+  servername: 212.95.34.31
   network: ws
   ws-opts:
     path: /
-- name: 🌍 VLESS 141
+- name: 🇩🇪 VLESS 25
   type: vless
-  server: 92.118.233.241
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.241
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 VLESS 142
-  type: vless
-  server: 92.118.233.194
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.194
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 143
-  type: vless
-  server: 92.118.233.241
+  server: 212.95.34.32
   port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
+  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 92.118.233.241
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 144
-  type: vless
-  server: 92.118.233.110
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.110
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 145
-  type: vless
-  server: 92.118.233.109
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.109
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 146
-  type: vless
-  server: 92.118.233.240
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.240
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 147
-  type: vless
-  server: 92.118.233.109
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.109
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 148
-  type: vless
-  server: 92.118.233.240
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.240
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 149
-  type: vless
-  server: 92.118.233.241
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.241
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 150
-  type: vless
-  server: 92.118.233.110
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.110
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 151
-  type: vless
-  server: 45.12.133.58
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.12.133.58
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 152
-  type: vless
-  server: n1.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n1.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 153
-  type: vless
-  server: n6.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n6.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 154
-  type: vless
-  server: n2.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n2.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 155
-  type: vless
-  server: f6.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: f6.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 156
-  type: vless
-  server: 92.118.233.104
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.104
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 157
-  type: vless
-  server: 45.14.247.158
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.14.247.158
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 158
-  type: vless
-  server: f3.sarasimano.com
-  port: 2096
-  uuid: 502ce704-dcec-4f92-9489-505c99ce6c89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: f3.sarasimano.com
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 159
-  type: vless
-  server: 94.131.9.230
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 94.131.9.230
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 160
-  type: vless
-  server: 45.14.247.3
-  port: 8443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 45.14.247.3
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 161
-  type: vless
-  server: 74.119.192.12
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 74.119.192.12
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 162
-  type: vless
-  server: 92.118.233.107
-  port: 443
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.107
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 163
-  type: vless
-  server: 92.118.233.115
-  port: 2096
-  uuid: a5e0c391-accd-45a7-8bb9-99ffb9b09b16
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 92.118.233.115
+  servername: 212.95.34.32
   network: ws
   ws-opts:
     path: /
@@ -2022,168 +366,30 @@ proxy-groups:
   - Auto
   - Load Balancer
   - 🇩🇪 VLESS 01
-  - 🇬🇧 VLESS 02
-  - 🇳🇱 VLESS 03
+  - 🇩🇪 VLESS 02
+  - 🇩🇪 VLESS 03
   - 🇩🇪 VLESS 04
   - 🇩🇪 VLESS 05
-  - 🇨🇦 VLESS 06
-  - 🇳🇱 VLESS 07
-  - 🇳🇱 VLESS 08
-  - 🇫🇷 VLESS 09
-  - 🇳🇱 VLESS 10
-  - 🇫🇷 VLESS 11
-  - 🇳🇱 VLESS 12
-  - 🇨🇦 VLESS 13
-  - 🇫🇷 VLESS 14
-  - 🇬🇧 VLESS 15
+  - 🇩🇪 VLESS 06
+  - 🇩🇪 VLESS 07
+  - 🇩🇪 VLESS 08
+  - 🇩🇪 VLESS 09
+  - 🇩🇪 VLESS 10
+  - 🇩🇪 VLESS 11
+  - 🇩🇪 VLESS 12
+  - 🇩🇪 VLESS 13
+  - 🇩🇪 VLESS 14
+  - 🇩🇪 VLESS 15
   - 🇩🇪 VLESS 16
-  - 🇺🇸 VLESS 17
-  - 🇬🇧 VLESS 18
-  - 🇫🇷 VLESS 19
-  - 🇳🇱 VLESS 20
-  - 🇬🇧 VLESS 21
-  - 🇫🇷 VLESS 22
-  - 🇳🇱 VLESS 23
-  - 🇬🇧 VLESS 24
-  - 🇫🇷 VLESS 25
-  - 🇨🇦 VLESS 26
-  - 🇫🇷 VLESS 27
-  - 🇩🇪 VLESS 28
-  - 🇩🇪 VLESS 29
-  - 🇩🇪 VLESS 30
-  - 🇫🇷 VLESS 31
-  - 🇩🇪 VLESS 32
-  - 🇩🇪 VLESS 33
-  - 🇫🇷 VLESS 34
-  - 🇬🇧 VLESS 35
-  - 🇫🇷 VLESS 36
-  - 🇫🇷 VLESS 37
-  - 🇫🇷 VLESS 38
-  - 🇨🇦 VLESS 39
-  - 🇩🇪 VLESS 40
-  - 🇫🇷 VLESS 41
-  - 🇩🇪 VLESS 42
-  - 🇫🇷 VLESS 43
-  - 🇫🇷 VLESS 44
-  - 🇫🇷 VLESS 45
-  - 🇺🇸 VLESS 46
-  - 🇩🇪 VLESS 47
-  - 🇫🇷 VLESS 48
-  - 🇩🇪 VLESS 49
-  - 🇩🇪 VLESS 50
-  - 🇫🇷 VLESS 51
-  - 🇫🇷 VLESS 52
-  - 🇨🇦 VLESS 53
-  - 🇫🇷 VLESS 54
-  - 🇩🇪 VLESS 55
-  - 🇺🇸 VLESS 56
-  - 🌍 VLESS 57
-  - 🌍 VLESS 58
-  - 🌍 VLESS 59
-  - 🌍 VLESS 60
-  - 🇫🇷 VLESS 61
-  - 🌍 VLESS 62
-  - 🇫🇷 VLESS 63
-  - 🌍 VLESS 64
-  - 🇫🇷 VLESS 65
-  - 🌍 VLESS 66
-  - 🌍 VLESS 67
-  - 🇺🇸 VLESS 68
-  - 🌍 VLESS 69
-  - 🌍 VLESS 70
-  - 🌍 VLESS 71
-  - 🌍 VLESS 72
-  - 🇫🇷 VLESS 73
-  - 🌍 VLESS 74
-  - 🌍 VLESS 75
-  - 🌍 VLESS 76
-  - 🌍 VLESS 77
-  - 🌍 VLESS 78
-  - 🇫🇷 VLESS 79
-  - 🇫🇷 VLESS 80
-  - 🌍 VLESS 81
-  - 🌍 VLESS 82
-  - 🇫🇷 VLESS 83
-  - 🌍 VLESS 84
-  - 🌍 VLESS 85
-  - 🌍 VLESS 86
-  - 🌍 VLESS 87
-  - 🌍 VLESS 88
-  - 🌍 VLESS 89
-  - 🌍 VLESS 90
-  - 🌍 VLESS 91
-  - 🌍 VLESS 92
-  - 🇩🇪 VLESS 93
-  - 🌍 VLESS 94
-  - 🌍 VLESS 95
-  - 🌍 VLESS 96
-  - 🌍 VLESS 97
-  - 🌍 VLESS 98
-  - 🌍 VLESS 99
-  - 🌍 VLESS 100
-  - 🌍 VLESS 101
-  - 🇩🇪 VLESS 102
-  - 🌍 VLESS 103
-  - 🌍 VLESS 104
-  - 🌍 VLESS 105
-  - 🌍 VLESS 106
-  - 🌍 VLESS 107
-  - 🌍 VLESS 108
-  - 🌍 VLESS 109
-  - 🇫🇷 VLESS 110
-  - 🌍 VLESS 111
-  - 🌍 VLESS 112
-  - 🌍 VLESS 113
-  - 🌍 VLESS 114
-  - 🌍 VLESS 115
-  - 🌍 VLESS 116
-  - 🌍 VLESS 117
-  - 🌍 VLESS 118
-  - 🌍 VLESS 119
-  - 🌍 VLESS 120
-  - 🌍 VLESS 121
-  - 🇩🇪 VLESS 122
-  - 🌍 VLESS 123
-  - 🌍 VLESS 124
-  - 🌍 VLESS 125
-  - 🌍 VLESS 126
-  - 🇺🇸 VLESS 127
-  - 🌍 VLESS 128
-  - 🌍 VLESS 129
-  - 🌍 VLESS 130
-  - 🌍 VLESS 131
-  - 🌍 VLESS 132
-  - 🌍 VLESS 133
-  - 🌍 VLESS 134
-  - 🌍 VLESS 135
-  - 🌍 VLESS 136
-  - 🌍 VLESS 137
-  - 🌍 VLESS 138
-  - 🌍 VLESS 139
-  - 🌍 VLESS 140
-  - 🌍 VLESS 141
-  - 🇺🇸 VLESS 142
-  - 🌍 VLESS 143
-  - 🌍 VLESS 144
-  - 🌍 VLESS 145
-  - 🌍 VLESS 146
-  - 🌍 VLESS 147
-  - 🌍 VLESS 148
-  - 🌍 VLESS 149
-  - 🌍 VLESS 150
-  - 🌍 VLESS 151
-  - 🌍 VLESS 152
-  - 🌍 VLESS 153
-  - 🌍 VLESS 154
-  - 🌍 VLESS 155
-  - 🌍 VLESS 156
-  - 🌍 VLESS 157
-  - 🌍 VLESS 158
-  - 🌍 VLESS 159
-  - 🌍 VLESS 160
-  - 🇩🇪 VLESS 161
-  - 🌍 VLESS 162
-  - 🌍 VLESS 163
+  - 🇩🇪 VLESS 17
+  - 🇩🇪 VLESS 18
+  - 🇩🇪 VLESS 19
+  - 🇩🇪 VLESS 20
+  - 🇩🇪 VLESS 21
+  - 🇩🇪 VLESS 22
+  - 🇩🇪 VLESS 23
+  - 🇩🇪 VLESS 24
+  - 🇩🇪 VLESS 25
 - name: Auto
   type: url-test
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/EU.png
@@ -2194,168 +400,30 @@ proxy-groups:
   hidden: true
   proxies:
   - 🇩🇪 VLESS 01
-  - 🇬🇧 VLESS 02
-  - 🇳🇱 VLESS 03
+  - 🇩🇪 VLESS 02
+  - 🇩🇪 VLESS 03
   - 🇩🇪 VLESS 04
   - 🇩🇪 VLESS 05
-  - 🇨🇦 VLESS 06
-  - 🇳🇱 VLESS 07
-  - 🇳🇱 VLESS 08
-  - 🇫🇷 VLESS 09
-  - 🇳🇱 VLESS 10
-  - 🇫🇷 VLESS 11
-  - 🇳🇱 VLESS 12
-  - 🇨🇦 VLESS 13
-  - 🇫🇷 VLESS 14
-  - 🇬🇧 VLESS 15
+  - 🇩🇪 VLESS 06
+  - 🇩🇪 VLESS 07
+  - 🇩🇪 VLESS 08
+  - 🇩🇪 VLESS 09
+  - 🇩🇪 VLESS 10
+  - 🇩🇪 VLESS 11
+  - 🇩🇪 VLESS 12
+  - 🇩🇪 VLESS 13
+  - 🇩🇪 VLESS 14
+  - 🇩🇪 VLESS 15
   - 🇩🇪 VLESS 16
-  - 🇺🇸 VLESS 17
-  - 🇬🇧 VLESS 18
-  - 🇫🇷 VLESS 19
-  - 🇳🇱 VLESS 20
-  - 🇬🇧 VLESS 21
-  - 🇫🇷 VLESS 22
-  - 🇳🇱 VLESS 23
-  - 🇬🇧 VLESS 24
-  - 🇫🇷 VLESS 25
-  - 🇨🇦 VLESS 26
-  - 🇫🇷 VLESS 27
-  - 🇩🇪 VLESS 28
-  - 🇩🇪 VLESS 29
-  - 🇩🇪 VLESS 30
-  - 🇫🇷 VLESS 31
-  - 🇩🇪 VLESS 32
-  - 🇩🇪 VLESS 33
-  - 🇫🇷 VLESS 34
-  - 🇬🇧 VLESS 35
-  - 🇫🇷 VLESS 36
-  - 🇫🇷 VLESS 37
-  - 🇫🇷 VLESS 38
-  - 🇨🇦 VLESS 39
-  - 🇩🇪 VLESS 40
-  - 🇫🇷 VLESS 41
-  - 🇩🇪 VLESS 42
-  - 🇫🇷 VLESS 43
-  - 🇫🇷 VLESS 44
-  - 🇫🇷 VLESS 45
-  - 🇺🇸 VLESS 46
-  - 🇩🇪 VLESS 47
-  - 🇫🇷 VLESS 48
-  - 🇩🇪 VLESS 49
-  - 🇩🇪 VLESS 50
-  - 🇫🇷 VLESS 51
-  - 🇫🇷 VLESS 52
-  - 🇨🇦 VLESS 53
-  - 🇫🇷 VLESS 54
-  - 🇩🇪 VLESS 55
-  - 🇺🇸 VLESS 56
-  - 🌍 VLESS 57
-  - 🌍 VLESS 58
-  - 🌍 VLESS 59
-  - 🌍 VLESS 60
-  - 🇫🇷 VLESS 61
-  - 🌍 VLESS 62
-  - 🇫🇷 VLESS 63
-  - 🌍 VLESS 64
-  - 🇫🇷 VLESS 65
-  - 🌍 VLESS 66
-  - 🌍 VLESS 67
-  - 🇺🇸 VLESS 68
-  - 🌍 VLESS 69
-  - 🌍 VLESS 70
-  - 🌍 VLESS 71
-  - 🌍 VLESS 72
-  - 🇫🇷 VLESS 73
-  - 🌍 VLESS 74
-  - 🌍 VLESS 75
-  - 🌍 VLESS 76
-  - 🌍 VLESS 77
-  - 🌍 VLESS 78
-  - 🇫🇷 VLESS 79
-  - 🇫🇷 VLESS 80
-  - 🌍 VLESS 81
-  - 🌍 VLESS 82
-  - 🇫🇷 VLESS 83
-  - 🌍 VLESS 84
-  - 🌍 VLESS 85
-  - 🌍 VLESS 86
-  - 🌍 VLESS 87
-  - 🌍 VLESS 88
-  - 🌍 VLESS 89
-  - 🌍 VLESS 90
-  - 🌍 VLESS 91
-  - 🌍 VLESS 92
-  - 🇩🇪 VLESS 93
-  - 🌍 VLESS 94
-  - 🌍 VLESS 95
-  - 🌍 VLESS 96
-  - 🌍 VLESS 97
-  - 🌍 VLESS 98
-  - 🌍 VLESS 99
-  - 🌍 VLESS 100
-  - 🌍 VLESS 101
-  - 🇩🇪 VLESS 102
-  - 🌍 VLESS 103
-  - 🌍 VLESS 104
-  - 🌍 VLESS 105
-  - 🌍 VLESS 106
-  - 🌍 VLESS 107
-  - 🌍 VLESS 108
-  - 🌍 VLESS 109
-  - 🇫🇷 VLESS 110
-  - 🌍 VLESS 111
-  - 🌍 VLESS 112
-  - 🌍 VLESS 113
-  - 🌍 VLESS 114
-  - 🌍 VLESS 115
-  - 🌍 VLESS 116
-  - 🌍 VLESS 117
-  - 🌍 VLESS 118
-  - 🌍 VLESS 119
-  - 🌍 VLESS 120
-  - 🌍 VLESS 121
-  - 🇩🇪 VLESS 122
-  - 🌍 VLESS 123
-  - 🌍 VLESS 124
-  - 🌍 VLESS 125
-  - 🌍 VLESS 126
-  - 🇺🇸 VLESS 127
-  - 🌍 VLESS 128
-  - 🌍 VLESS 129
-  - 🌍 VLESS 130
-  - 🌍 VLESS 131
-  - 🌍 VLESS 132
-  - 🌍 VLESS 133
-  - 🌍 VLESS 134
-  - 🌍 VLESS 135
-  - 🌍 VLESS 136
-  - 🌍 VLESS 137
-  - 🌍 VLESS 138
-  - 🌍 VLESS 139
-  - 🌍 VLESS 140
-  - 🌍 VLESS 141
-  - 🇺🇸 VLESS 142
-  - 🌍 VLESS 143
-  - 🌍 VLESS 144
-  - 🌍 VLESS 145
-  - 🌍 VLESS 146
-  - 🌍 VLESS 147
-  - 🌍 VLESS 148
-  - 🌍 VLESS 149
-  - 🌍 VLESS 150
-  - 🌍 VLESS 151
-  - 🌍 VLESS 152
-  - 🌍 VLESS 153
-  - 🌍 VLESS 154
-  - 🌍 VLESS 155
-  - 🌍 VLESS 156
-  - 🌍 VLESS 157
-  - 🌍 VLESS 158
-  - 🌍 VLESS 159
-  - 🌍 VLESS 160
-  - 🇩🇪 VLESS 161
-  - 🌍 VLESS 162
-  - 🌍 VLESS 163
+  - 🇩🇪 VLESS 17
+  - 🇩🇪 VLESS 18
+  - 🇩🇪 VLESS 19
+  - 🇩🇪 VLESS 20
+  - 🇩🇪 VLESS 21
+  - 🇩🇪 VLESS 22
+  - 🇩🇪 VLESS 23
+  - 🇩🇪 VLESS 24
+  - 🇩🇪 VLESS 25
 - name: Load Balancer
   type: load-balance
   strategy: consistent-hashing
@@ -2367,168 +435,30 @@ proxy-groups:
   hidden: true
   proxies:
   - 🇩🇪 VLESS 01
-  - 🇬🇧 VLESS 02
-  - 🇳🇱 VLESS 03
+  - 🇩🇪 VLESS 02
+  - 🇩🇪 VLESS 03
   - 🇩🇪 VLESS 04
   - 🇩🇪 VLESS 05
-  - 🇨🇦 VLESS 06
-  - 🇳🇱 VLESS 07
-  - 🇳🇱 VLESS 08
-  - 🇫🇷 VLESS 09
-  - 🇳🇱 VLESS 10
-  - 🇫🇷 VLESS 11
-  - 🇳🇱 VLESS 12
-  - 🇨🇦 VLESS 13
-  - 🇫🇷 VLESS 14
-  - 🇬🇧 VLESS 15
+  - 🇩🇪 VLESS 06
+  - 🇩🇪 VLESS 07
+  - 🇩🇪 VLESS 08
+  - 🇩🇪 VLESS 09
+  - 🇩🇪 VLESS 10
+  - 🇩🇪 VLESS 11
+  - 🇩🇪 VLESS 12
+  - 🇩🇪 VLESS 13
+  - 🇩🇪 VLESS 14
+  - 🇩🇪 VLESS 15
   - 🇩🇪 VLESS 16
-  - 🇺🇸 VLESS 17
-  - 🇬🇧 VLESS 18
-  - 🇫🇷 VLESS 19
-  - 🇳🇱 VLESS 20
-  - 🇬🇧 VLESS 21
-  - 🇫🇷 VLESS 22
-  - 🇳🇱 VLESS 23
-  - 🇬🇧 VLESS 24
-  - 🇫🇷 VLESS 25
-  - 🇨🇦 VLESS 26
-  - 🇫🇷 VLESS 27
-  - 🇩🇪 VLESS 28
-  - 🇩🇪 VLESS 29
-  - 🇩🇪 VLESS 30
-  - 🇫🇷 VLESS 31
-  - 🇩🇪 VLESS 32
-  - 🇩🇪 VLESS 33
-  - 🇫🇷 VLESS 34
-  - 🇬🇧 VLESS 35
-  - 🇫🇷 VLESS 36
-  - 🇫🇷 VLESS 37
-  - 🇫🇷 VLESS 38
-  - 🇨🇦 VLESS 39
-  - 🇩🇪 VLESS 40
-  - 🇫🇷 VLESS 41
-  - 🇩🇪 VLESS 42
-  - 🇫🇷 VLESS 43
-  - 🇫🇷 VLESS 44
-  - 🇫🇷 VLESS 45
-  - 🇺🇸 VLESS 46
-  - 🇩🇪 VLESS 47
-  - 🇫🇷 VLESS 48
-  - 🇩🇪 VLESS 49
-  - 🇩🇪 VLESS 50
-  - 🇫🇷 VLESS 51
-  - 🇫🇷 VLESS 52
-  - 🇨🇦 VLESS 53
-  - 🇫🇷 VLESS 54
-  - 🇩🇪 VLESS 55
-  - 🇺🇸 VLESS 56
-  - 🌍 VLESS 57
-  - 🌍 VLESS 58
-  - 🌍 VLESS 59
-  - 🌍 VLESS 60
-  - 🇫🇷 VLESS 61
-  - 🌍 VLESS 62
-  - 🇫🇷 VLESS 63
-  - 🌍 VLESS 64
-  - 🇫🇷 VLESS 65
-  - 🌍 VLESS 66
-  - 🌍 VLESS 67
-  - 🇺🇸 VLESS 68
-  - 🌍 VLESS 69
-  - 🌍 VLESS 70
-  - 🌍 VLESS 71
-  - 🌍 VLESS 72
-  - 🇫🇷 VLESS 73
-  - 🌍 VLESS 74
-  - 🌍 VLESS 75
-  - 🌍 VLESS 76
-  - 🌍 VLESS 77
-  - 🌍 VLESS 78
-  - 🇫🇷 VLESS 79
-  - 🇫🇷 VLESS 80
-  - 🌍 VLESS 81
-  - 🌍 VLESS 82
-  - 🇫🇷 VLESS 83
-  - 🌍 VLESS 84
-  - 🌍 VLESS 85
-  - 🌍 VLESS 86
-  - 🌍 VLESS 87
-  - 🌍 VLESS 88
-  - 🌍 VLESS 89
-  - 🌍 VLESS 90
-  - 🌍 VLESS 91
-  - 🌍 VLESS 92
-  - 🇩🇪 VLESS 93
-  - 🌍 VLESS 94
-  - 🌍 VLESS 95
-  - 🌍 VLESS 96
-  - 🌍 VLESS 97
-  - 🌍 VLESS 98
-  - 🌍 VLESS 99
-  - 🌍 VLESS 100
-  - 🌍 VLESS 101
-  - 🇩🇪 VLESS 102
-  - 🌍 VLESS 103
-  - 🌍 VLESS 104
-  - 🌍 VLESS 105
-  - 🌍 VLESS 106
-  - 🌍 VLESS 107
-  - 🌍 VLESS 108
-  - 🌍 VLESS 109
-  - 🇫🇷 VLESS 110
-  - 🌍 VLESS 111
-  - 🌍 VLESS 112
-  - 🌍 VLESS 113
-  - 🌍 VLESS 114
-  - 🌍 VLESS 115
-  - 🌍 VLESS 116
-  - 🌍 VLESS 117
-  - 🌍 VLESS 118
-  - 🌍 VLESS 119
-  - 🌍 VLESS 120
-  - 🌍 VLESS 121
-  - 🇩🇪 VLESS 122
-  - 🌍 VLESS 123
-  - 🌍 VLESS 124
-  - 🌍 VLESS 125
-  - 🌍 VLESS 126
-  - 🇺🇸 VLESS 127
-  - 🌍 VLESS 128
-  - 🌍 VLESS 129
-  - 🌍 VLESS 130
-  - 🌍 VLESS 131
-  - 🌍 VLESS 132
-  - 🌍 VLESS 133
-  - 🌍 VLESS 134
-  - 🌍 VLESS 135
-  - 🌍 VLESS 136
-  - 🌍 VLESS 137
-  - 🌍 VLESS 138
-  - 🌍 VLESS 139
-  - 🌍 VLESS 140
-  - 🌍 VLESS 141
-  - 🇺🇸 VLESS 142
-  - 🌍 VLESS 143
-  - 🌍 VLESS 144
-  - 🌍 VLESS 145
-  - 🌍 VLESS 146
-  - 🌍 VLESS 147
-  - 🌍 VLESS 148
-  - 🌍 VLESS 149
-  - 🌍 VLESS 150
-  - 🌍 VLESS 151
-  - 🌍 VLESS 152
-  - 🌍 VLESS 153
-  - 🌍 VLESS 154
-  - 🌍 VLESS 155
-  - 🌍 VLESS 156
-  - 🌍 VLESS 157
-  - 🌍 VLESS 158
-  - 🌍 VLESS 159
-  - 🌍 VLESS 160
-  - 🇩🇪 VLESS 161
-  - 🌍 VLESS 162
-  - 🌍 VLESS 163
+  - 🇩🇪 VLESS 17
+  - 🇩🇪 VLESS 18
+  - 🇩🇪 VLESS 19
+  - 🇩🇪 VLESS 20
+  - 🇩🇪 VLESS 21
+  - 🇩🇪 VLESS 22
+  - 🇩🇪 VLESS 23
+  - 🇩🇪 VLESS 24
+  - 🇩🇪 VLESS 25
 rule-providers:
   private:
     type: http
@@ -2609,6 +539,7 @@ rule-providers:
     interval: 86400
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
+- DOMAIN-SUFFIX,.ir,DIRECT
 - DOMAIN,www.cloudflare.com,DIRECT
 - RULE-SET,ads,REJECT
 - RULE-SET,malware,REJECT
@@ -2621,3 +552,8 @@ rules:
 - RULE-SET,iran_other,DIRECT
 - RULE-SET,apps,DIRECT
 - MATCH,Smart VPN
+ntp:
+  enable: true
+  server: time.apple.com
+  port: 123
+  interval: 30
