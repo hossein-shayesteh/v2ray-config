@@ -57,482 +57,85 @@ tun:
   - any:53
   - tcp://any:53
 proxies:
-- name: 🇳🇱 VLESS 01
+- name: 🇺🇸 VLESS 01
   type: vless
-  server: 45.128.232.102
-  port: 16798
-  uuid: 3691b39b-4aa7-4f68-8304-902e4734e2f4
+  server: 165.227.221.41
+  port: 443
+  uuid: e24e8c57-9ac5-4799-90c4-859f9b52e7d1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: yahoo.com
-  network: tcp
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: UGm82qoVVxxTkwGLniA8C004EYPW52VG7GmdgHzwSXU
-    short-id: 229b2a94
-- name: 🇨🇦 VLESS 02
-  type: vless
-  server: obedient-menu.seotoolsforyou.co.uk
-  port: 80
-  uuid: 561623c8-4983-44d3-a6ef-92b803a74ee8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: obedient-menu.seotoolsforyou.co.uk
+  servername: zula.ir
   network: ws
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+- name: 🇩🇪 VLESS 02
+  type: vless
+  server: 159.65.119.239
+  port: 443
+  uuid: c728f2a2-7c96-4291-a581-dac873e8e456
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zula.ir
+  network: ws
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+- name: 🇬🇧 VLESS 03
+  type: vless
+  server: 102.177.189.251
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pqh23v4.hiddendom.shop
+  network: grpc
+  grpc-opts: {}
+- name: 🇨🇦 VLESS 04
+  type: vless
+  server: 104.17.147.22
+  port: 8443
+  uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lease-17.access.name.ng
+  network: ws
+  client-fingerprint: chrome
   ws-opts:
     path: /
-- name: 🇩🇪 VLESS 03
+    headers:
+      Host: lease-17.access.name.ng
+- name: 🇬🇧 VLESS 05
   type: vless
-  server: sss53988.tas-bazi.com
+  server: eng14.netliberated.org
   port: 443
-  uuid: 43fbd4b6-0e35-4b6f-9ed2-8fe95be28bf5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: sss53988.tas-bazi.com
-  network: tcp
-- name: 🇩🇪 VLESS 04
-  type: vless
-  server: m41a.vip784.com
-  port: 33801
-  uuid: bbef1e1b-4061-45ce-a6e0-4cec2fe38cc4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: m41a.vip784.com
-  network: tcp
-- name: 🇩🇪 VLESS 05
-  type: vless
-  server: 91.99.223.133
-  port: 443
-  uuid: ba4c59a5-2e7d-4dc4-c115-27615c978e66
+  uuid: 0bb6dff2-0029-4b81-8c81-4fc70fae1ed9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: store.steampowered.com
+  servername: www.halfords.com
   network: tcp
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IbRZfIHJGx6UojlE1uoHJ-eBAXF92z5ST0DrQA7-mDw
-- name: 🇳🇱 VLESS 06
-  type: vless
-  server: 5.61.50.192
-  port: 34045
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  network: tcp
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-- name: 🇩🇪 VLESS 07
-  type: vless
-  server: 91.99.27.66
-  port: 443
-  uuid: cbfaa4fa-8393-43db-a052-d86543462f0d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 91.99.27.66
-  network: tcp
-- name: 🇩🇪 VLESS 08
-  type: vless
-  server: sss19074.tas-bazi.com
-  port: 443
-  uuid: 43fbd4b6-0e35-4b6f-9ed2-8fe95be28bf5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: sss19074.tas-bazi.com
-  network: tcp
-- name: 🇩🇪 VLESS 09
-  type: vless
-  server: order.dissertationhelpspecialist.com
-  port: 443
-  uuid: b2b4fcb3-1f7f-4992-9780-aec5e9bef820
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgju.org
-  network: grpc
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice
-  reality-opts:
-    public-key: xI1IUDhIUaKY3qPE9CSOcNaiJ4sRc69ppRamFOMwgiI
-    short-id: 3da49e0b43
-- name: 🇩🇪 VLESS 10
-  type: vless
-  server: sss52355.tas-bazi.com
-  port: 443
-  uuid: ee845a26-9d15-4cac-b3a0-fc0c0c8135af
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: sss52355.tas-bazi.com
-  network: tcp
-- name: 🇩🇪 VLESS 11
-  type: vless
-  server: sss56902.tas-bazi.com
-  port: 443
-  uuid: 43fbd4b6-0e35-4b6f-9ed2-8fe95be28bf5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: sss56902.tas-bazi.com
-  network: tcp
-- name: 🇨🇦 VLESS 13
-  type: vless
-  server: informed-location.seotoolsforyou.co.uk
-  port: 80
-  uuid: 5c929ec5-5b1e-447a-950c-354c5d1ba1de
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: informed-location.seotoolsforyou.co.uk
-  network: ws
-  ws-opts:
-    path: /?Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN?ed=2560
-- name: 🇨🇦 VLESS 14
-  type: vless
-  server: confident-club.seotoolsforyou.co.uk
-  port: 80
-  uuid: 9926ee97-4398-48dd-b263-2863c62f5c41
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: confident-club.seotoolsforyou.co.uk
-  network: ws
-  ws-opts:
-    path: /?*VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY*
-- name: 🇧🇪 VLESS 15
-  type: vless
-  server: 45.83.20.34
-  port: 58164
-  uuid: 34c9f621-0614-4b7f-aab3-c4400bb15a89
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: yahoo.com
-  network: tcp
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 7cbcFHSx2vqz38zW9BmlSIHTTSdNtlgv_S5uZ0MSIAE
-    short-id: 788456bc
-- name: 🇬🇧 VLESS 16
-  type: vless
-  server: 51.89.2.113
-  port: 8081
-  uuid: f924939e-2d9a-46b7-a3c2-67a225b7c027
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: yahoo.com
-  network: tcp
-  client-fingerprint: chrome
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: nT4JZTeUVOw-XZ-htdqbFi1je4ZHeg-ALICrDk2usFE
-    short-id: d19d7a2d3da8595a
-- name: 🇹🇷 VLESS 17
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+- name: 🇨🇦 VLESS 06
   type: vless
-  server: 45.12.143.191
-  port: 20329
-  uuid: e105e56a-5f81-41a2-ab44-bfffc9b00674
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: yahoo.com
-  network: tcp
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Lj3MXlg16CTFHtU88acSS-ACfGnwJ_xkU6dC6k8OeDo
-    short-id: 4602ee9f9f36
-- name: 🇳🇱 VLESS 18
-  type: vless
-  server: 85.234.65.120
+  server: 148.113.207.224
   port: 443
-  uuid: 2a562107-43a6-40a4-a35e-e01e6f21684e
+  uuid: a4fa1e75-870d-425b-8dee-6ced94963275
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: www.speedtest.net
-  network: tcp
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ng4h6xKU-cqoC_T4U9_wGbYlFqpj9RJbsWVR4AJ_MSo
-    short-id: e2
-- name: 🇩🇪 VLESS 19
-  type: vless
-  server: 253533.3n95278zh9x6i4zi8r0r.curfuffled.com
-  port: 443
-  uuid: 2e75dbea-388b-4db3-9989-32cd0d8d6ec6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgju.org
-  network: grpc
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl
-  reality-opts:
-    public-key: cGsFvA6EJ_WutI3kRa5vdi0Qtgos6oa95lTn7oN7Pzw
-    short-id: 519b033b94
-- name: 🇩🇪 VLESS 20
-  type: vless
-  server: 91.99.70.212
-  port: 443
-  uuid: bd1ccdd4-a1fe-4f37-c3dd-eaab85923eb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.cdn77.com
-  network: grpc
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: '@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM----------@VPN_ROOM--------@VPN_ROOM'
-  reality-opts:
-    public-key: Zjzu45fPTjjaIcBoYyaLqieLtsWJD8ujdzNOQodWvnk
-- name: 🇩🇪 VLESS 21
-  type: vless
-  server: 212.95.34.13
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.13
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇱🇻 VLESS 22
-  type: vless
-  server: 37.233.82.140
-  port: 40478
-  uuid: e977d854-33f3-4345-abee-bf3fa9a6d880
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: yahoo.com
-  network: tcp
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: lcJ0LSh015XRfz5-7wB_hln3-bq5ZatFgPugSUCrdR0
-    short-id: 3c
-- name: 🇫🇷 VLESS 23
-  type: vless
-  server: 80.13.135.11
-  port: 57546
-  uuid: 4aae04fa-f390-44bb-9558-a344c8baed36
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ratp.fr
-  network: grpc
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: probrain-etl
-  reality-opts:
-    public-key: G4WqyBonyjuo6n6pIL_yLN33T9e8BNHIUlrVnqZPpTY
-    short-id: e9da
-- name: 🇫🇷 VLESS 24
-  type: vless
-  server: 185.231.205.231
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 185.231.205.231
-  network: grpc
-  grpc-opts: {}
-- name: 🇨🇦 VLESS 25
-  type: vless
-  server: light-presence.oneeat.co
-  port: 80
-  uuid: 7e74ff43-3a90-48b3-8372-7d92a045c2d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: light-presence.oneeat.co
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: light-presence.oneeat.co
-- name: 🇩🇪 VLESS 26
-  type: vless
-  server: 51.68.189.39
-  port: 80
-  uuid: af552d84-cefb-4952-a814-17f284c21080
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 51.68.189.39
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: google.com
-- name: 🇷🇺 VMESS 27
-  type: vmess
-  server: 45.67.230.79
-  port: 11052
-  uuid: 314185f7-931d-4656-922d-0857e7afd224
-  alterId: 0
-  udp: true
-  skip-cert-verify: true
-  cipher: none
-  network: tcp
-- name: 🇩🇪 VLESS 28
-  type: vless
-  server: sss46544.tas-bazi.com
-  port: 443
-  uuid: 72c0e2d6-638b-4a01-936e-50a40637f1cc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: sss46544.tas-bazi.com
-  network: tcp
-- name: 🇩🇪 VLESS 29
-  type: vless
-  server: 212.95.34.22
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.22
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 30
-  type: vless
-  server: 212.95.34.28
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.28
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 32
-  type: vless
-  server: 212.95.34.21
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.21
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 33
-  type: vless
-  server: 212.95.34.9
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 VLESS 35
-  type: vless
-  server: 212.95.34.20
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.20
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇨🇦 VLESS 37
-  type: vless
-  server: ipw.gfdv54cvghhgfhgj-njhgj64.info
-  port: 443
-  uuid: 337bf72e-bb79-4d5f-be3f-7822eb77100c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9Mp6PkM999.aDcFv.InFo
+  servername: zula.ir
   network: ws
   client-fingerprint: chrome
   ws-opts:
-    path: /
-    headers:
-      Host: 9Mp6PkM999.aDcFv.InFo
-- name: 🇺🇸 VLESS 38
-  type: vless
-  server: 185.236.232.148
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 185.236.232.148
-  network: grpc
-  grpc-opts: {}
-- name: 🇺🇸 VLESS 39
-  type: vless
-  server: 185.236.232.116
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 185.236.232.116
-  network: grpc
-  grpc-opts: {}
-- name: 🇺🇸 VLESS 40
-  type: vless
-  server: 185.236.232.157
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 185.236.232.157
-  network: grpc
-  grpc-opts: {}
-- name: 🇨🇦 VLESS 41
-  type: vless
-  server: amazon-15.cristiano.name.ng
-  port: 443
-  uuid: 4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: store.steampowered.com
-  network: tcp
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4
-    short-id: f5
-- name: 🇺🇸 VLESS 42
-  type: vless
-  server: 45.86.72.106
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 45.86.72.106
-  network: grpc
-  grpc-opts: {}
-- name: 🇨🇦 VLESS 43
+    path: /ws
+- name: 🇨🇦 VLESS 07
   type: vless
   server: www.speedtest.net
   port: 8443
@@ -540,229 +143,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hetzner-13.bibar.name.ng
+  servername: lease-17.access.name.ng
   network: ws
+  client-fingerprint: chrome
   ws-opts:
     path: /
     headers:
-      Host: hetzner-13.bibar.name.ng
-- name: 🇨🇦 VLESS 44
-  type: vless
-  server: www.speedtest.net
-  port: 2095
-  uuid: abd510b1-881c-4360-c633-84e1024c1386
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: www.speedtest.net
-  network: tcp
-- name: 🇬🇧 VLESS 45
-  type: vless
-  server: 51.195.202.129
-  port: 443
-  uuid: a00b3f51-36ec-4960-9668-a30ad2f68421
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zula.ir
-  network: ws
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-- name: 🇨🇦 VLESS 46
-  type: vless
-  server: 148.113.207.224
-  port: 443
-  uuid: 74d03a21-f000-4b08-9dd8-440f0e4d6622
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zula.ir
-  network: ws
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-- name: 🇫🇷 VLESS 47
-  type: vless
-  server: 51.178.42.187
-  port: 443
-  uuid: ff288332-d2d2-473d-9b30-b6ab97f27b90
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zula.ir
-  network: ws
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-- name: 🇵🇱 VLESS 48
-  type: vless
-  server: 57.128.219.105
-  port: 443
-  uuid: cf0b2cdc-9292-450d-929a-af86ed52d87d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zula.ir
-  network: ws
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-- name: 🇩🇪 VLESS 49
-  type: vless
-  server: 51.195.101.222
-  port: 443
-  uuid: 29f55cea-4038-402c-a496-2e8ae2d8e660
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zula.ir
-  network: ws
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-- name: 🇩🇪 VLESS 50
-  type: vless
-  server: 212.95.34.15
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.15
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 51
-  type: vless
-  server: 159.65.119.239
-  port: 443
-  uuid: 1e1858cd-def6-4408-a9d2-153d1f2fe47e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zula.ir
-  network: ws
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-- name: 🌍 VMESS 52
-  type: vmess
-  server: 135.181.102.63
-  port: 2082
-  uuid: 24682dda-4318-4ce3-b373-f6b729113f12
-  alterId: 0
-  udp: true
-  skip-cert-verify: true
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: 24682dda-4318-4ce3-b373-f6b729113f12-vm
-    headers:
-      Host: www.bing.com
-- name: 🌍 VLESS 53
-  type: vless
-  server: 212.95.34.11
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.11
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 54
-  type: vless
-  server: 212.95.34.14
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.14
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 55
-  type: vless
-  server: 212.95.34.16
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.16
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VMESS 58
-  type: vmess
-  server: 38.60.134.249
-  port: 443
-  uuid: beb28159-7f4c-4c09-9313-6283515f150b
-  alterId: 0
-  udp: true
-  skip-cert-verify: true
-  cipher: none
-  network: tcp
-- name: 🌍 VMESS 59
-  type: vmess
-  server: 154.93.37.21
-  port: 443
-  uuid: 64a37ce5-e713-4ad4-c1de-b68761e9fef6
-  alterId: 0
-  udp: true
-  skip-cert-verify: true
-  cipher: none
-  network: tcp
-- name: 🌍 VLESS 61
-  type: vless
-  server: 212.95.34.24
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.24
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 62
-  type: vless
-  server: 51.79.29.172
-  port: 33801
-  uuid: 13c10b21-6211-4d43-856f-2e54ef2ac2e2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 51.79.29.172
-  network: tcp
-- name: 🌍 VLESS 66
-  type: vless
-  server: 212.95.34.17
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.17
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 68
-  type: vless
-  server: 212.95.34.30
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 212.95.34.30
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 70
+      Host: lease-17.access.name.ng
+- name: 🇩🇪 VLESS 08
   type: vless
   server: 212.95.34.4
   port: 443
@@ -774,19 +162,19 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🌍 VLESS 71
+- name: 🇩🇪 VLESS 09
   type: vless
-  server: 212.95.34.6
+  server: 109.120.138.47
   port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  uuid: 7c63f43f-f526-49bb-b5c8-2be26e11ef00
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 212.95.34.6
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌍 VLESS 72
+  servername: statue.lnmarketplace.net
+  network: tcp
+  alpn:
+  - h2
+- name: 🇩🇪 VLESS 10
   type: vless
   server: 212.95.34.8
   port: 443
@@ -798,114 +186,226 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🌍 VLESS 74
+- name: 🇫🇮 VLESS 11
   type: vless
-  server: 212.95.34.10
+  server: m59a.vip784.com
+  port: 33801
+  uuid: 8523c3f2-d5c7-4cce-9342-5c48a1afb3b9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: m59a.vip784.com
+  network: tcp
+- name: 🇺🇸 VLESS 12
+  type: vless
+  server: 162.243.229.62
+  port: 2053
+  uuid: e2c81576-9e6f-46a0-bc74-91f74ecf628a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.openstreetmap.org
+  network: tcp
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: o0nMnI0KSrYDYVkmz1HEVAqbaz3FzSanoMt7c0LOSHU
+    short-id: 538cab
+- name: 🇹🇷 VLESS 13
+  type: vless
+  server: 185.113.223.65
+  port: 10321
+  uuid: 1708fb1a-cff1-4532-a837-435af960ee77
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: google.com
+  network: tcp
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: S-x02lU6w9dJbqgEnchi70h7OoGKSgey7OjVx6cVDDA
+    short-id: 8f4e
+- name: 🇩🇪 VLESS 14
+  type: vless
+  server: 212.95.34.15
   port: 443
   uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 212.95.34.10
+  servername: 212.95.34.15
   network: ws
   ws-opts:
     path: /
-- name: 🌍 VLESS 75
+- name: 🇨🇦 VLESS 15
   type: vless
-  server: 212.95.34.12
+  server: www.speedtest.net
   port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  uuid: 52f3fbb7-a55a-4881-a05b-cf8d83cda722
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 212.95.34.12
+  servername: thROUgh-SyntAx-AnD-SIlenCe-We-TraVEL-As-onE.PAGES.Dev
   network: ws
+  alpn:
+  - http/1.1
+  client-fingerprint: randomized
   ws-opts:
-    path: /
-- name: 🌍 VLESS 80
+    path: /lBuf8KOs1tGVjdyw?ed=2560
+    headers:
+      Host: through-syntax-and-silence-we-travel-as-one.pages.dev
+- name: 🇨🇦 VLESS 16
   type: vless
-  server: 212.95.34.18
+  server: 104.21.80.1
   port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  uuid: 52f3fbb7-a55a-4881-a05b-cf8d83cda722
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 212.95.34.18
+  servername: tHrOugh-SyNtAx-aNd-silEnCE-we-TravEL-aS-One.paGES.DEV
   network: ws
+  alpn:
+  - http/1.1
+  client-fingerprint: randomized
   ws-opts:
-    path: /
-- name: 🌍 VLESS 81
+    path: /FfgMt845vXkmLG3C?ed=2560
+    headers:
+      Host: through-syntax-and-silence-we-travel-as-one.pages.dev
+- name: 🇨🇦 VLESS 17
   type: vless
-  server: 212.95.34.19
+  server: 104.21.32.1
   port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  uuid: 52f3fbb7-a55a-4881-a05b-cf8d83cda722
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 212.95.34.19
+  servername: tHRoUGH-syNTAx-anD-sIlEnCE-We-travEl-as-one.PaGEs.DEv
   network: ws
+  alpn:
+  - http/1.1
+  client-fingerprint: randomized
   ws-opts:
-    path: /
-- name: 🌍 VLESS 84
+    path: /tCqrWCcsFB9ecj5z?ed=2560
+    headers:
+      Host: through-syntax-and-silence-we-travel-as-one.pages.dev
+- name: 🇨🇦 VLESS 18
   type: vless
-  server: 212.95.34.25
+  server: 104.21.112.1
   port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  uuid: 52f3fbb7-a55a-4881-a05b-cf8d83cda722
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 212.95.34.25
+  servername: ThrOuGh-sYNtAx-ANd-SiLeNCE-wE-trAvEL-AS-ONE.pagES.DeV
   network: ws
+  alpn:
+  - http/1.1
+  client-fingerprint: randomized
   ws-opts:
-    path: /
-- name: 🌍 VLESS 85
+    path: /gHtFWGQ7ZOuoAYFi?ed=2560
+    headers:
+      Host: through-syntax-and-silence-we-travel-as-one.pages.dev
+- name: 🇨🇦 VLESS 19
   type: vless
-  server: 212.95.34.26
+  server: 104.21.16.1
   port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  uuid: 52f3fbb7-a55a-4881-a05b-cf8d83cda722
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 212.95.34.26
+  servername: THrOUgH-sYNtax-AND-siLeNCe-wE-TrAvel-AS-ONe.PagES.dev
   network: ws
+  alpn:
+  - http/1.1
+  client-fingerprint: randomized
   ws-opts:
-    path: /
-- name: 🌍 VLESS 86
+    path: /sLVJv7JNIg4WtT4n?ed=2560
+    headers:
+      Host: through-syntax-and-silence-we-travel-as-one.pages.dev
+- name: 🇨🇦 VLESS 20
   type: vless
-  server: 212.95.34.29
+  server: 104.21.64.1
   port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  uuid: 52f3fbb7-a55a-4881-a05b-cf8d83cda722
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 212.95.34.29
+  servername: ThRougH-syNTax-anD-sileNcE-wE-traVeL-aS-ONE.PAGes.dEV
   network: ws
+  alpn:
+  - http/1.1
+  client-fingerprint: randomized
   ws-opts:
-    path: /
-- name: 🌍 VLESS 87
+    path: /PKo2uOkLZfgqWvDO?ed=2560
+    headers:
+      Host: through-syntax-and-silence-we-travel-as-one.pages.dev
+- name: 🇨🇦 VLESS 21
   type: vless
-  server: 212.95.34.31
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  server: the-hidden-gateway-to-a-world-of-unspoken-wonders.pages.dev
+  port: 2083
+  uuid: 7f07979e-3ad0-4cd3-8dbf-8e8086613fa1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 212.95.34.31
+  servername: tHE-HIDden-GaTewaY-To-A-WORLD-Of-UnsPOkEn-wOnDERs.PaGeS.DEV
   network: ws
+  alpn:
+  - http/1.1
+  client-fingerprint: randomized
   ws-opts:
-    path: /
-- name: 🌍 VLESS 88
+    path: /yncR47eVZUTmJi6c?ed=2560
+    headers:
+      Host: the-hidden-gateway-to-a-world-of-unspoken-wonders.pages.dev
+- name: 🇨🇦 VLESS 22
   type: vless
-  server: 212.95.34.32
-  port: 443
-  uuid: 784646e5-8e84-4672-8670-efc9cafcd2cc
+  server: www.speedtest.net
+  port: 2083
+  uuid: 7f07979e-3ad0-4cd3-8dbf-8e8086613fa1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 212.95.34.32
+  servername: THe-hiDDen-gaTeway-To-A-WORLd-OF-UnspoKen-WOndERS.pAgeS.deV
   network: ws
+  alpn:
+  - http/1.1
+  client-fingerprint: randomized
   ws-opts:
-    path: /
+    path: /ggVULWcfhLqNnstK?ed=2560
+    headers:
+      Host: the-hidden-gateway-to-a-world-of-unspoken-wonders.pages.dev
+- name: 🇨🇦 VLESS 23
+  type: vless
+  server: 172.66.47.97
+  port: 2083
+  uuid: 7f07979e-3ad0-4cd3-8dbf-8e8086613fa1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: thE-HIDdEn-gATewaY-TO-A-wORLD-of-unspOKEn-wONDers.PagES.dEv
+  network: ws
+  alpn:
+  - http/1.1
+  client-fingerprint: randomized
+  ws-opts:
+    path: /yUFBlPhOaEtUwjGH?ed=2560
+    headers:
+      Host: the-hidden-gateway-to-a-world-of-unspoken-wonders.pages.dev
+- name: 🇨🇦 VLESS 24
+  type: vless
+  server: 172.66.44.159
+  port: 2083
+  uuid: 7f07979e-3ad0-4cd3-8dbf-8e8086613fa1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: the-HidDEN-GAtewaY-To-a-WOrLd-oF-UnspoKEn-WONdErs.PAgES.DEv
+  network: ws
+  alpn:
+  - http/1.1
+  client-fingerprint: randomized
+  ws-opts:
+    path: /fdiNDVQJJoXz4BCA?ed=2560
+    headers:
+      Host: the-hidden-gateway-to-a-world-of-unspoken-wonders.pages.dev
 proxy-groups:
 - name: Smart VPN
   type: select
@@ -914,75 +414,30 @@ proxy-groups:
   proxies:
   - Auto
   - Load Balancer
-  - 🇳🇱 VLESS 01
-  - 🇨🇦 VLESS 02
-  - 🇩🇪 VLESS 03
-  - 🇩🇪 VLESS 04
-  - 🇩🇪 VLESS 05
-  - 🇳🇱 VLESS 06
-  - 🇩🇪 VLESS 07
+  - 🇺🇸 VLESS 01
+  - 🇩🇪 VLESS 02
+  - 🇬🇧 VLESS 03
+  - 🇨🇦 VLESS 04
+  - 🇬🇧 VLESS 05
+  - 🇨🇦 VLESS 06
+  - 🇨🇦 VLESS 07
   - 🇩🇪 VLESS 08
   - 🇩🇪 VLESS 09
   - 🇩🇪 VLESS 10
-  - 🇩🇪 VLESS 11
-  - 🇨🇦 VLESS 13
-  - 🇨🇦 VLESS 14
-  - 🇧🇪 VLESS 15
-  - 🇬🇧 VLESS 16
-  - 🇹🇷 VLESS 17
-  - 🇳🇱 VLESS 18
-  - 🇩🇪 VLESS 19
-  - 🇩🇪 VLESS 20
-  - 🇩🇪 VLESS 21
-  - 🇱🇻 VLESS 22
-  - 🇫🇷 VLESS 23
-  - 🇫🇷 VLESS 24
-  - 🇨🇦 VLESS 25
-  - 🇩🇪 VLESS 26
-  - 🇷🇺 VMESS 27
-  - 🇩🇪 VLESS 28
-  - 🇩🇪 VLESS 29
-  - 🇩🇪 VLESS 30
-  - 🇩🇪 VLESS 32
-  - 🇩🇪 VLESS 33
-  - 🇩🇪 VLESS 35
-  - 🇨🇦 VLESS 37
-  - 🇺🇸 VLESS 38
-  - 🇺🇸 VLESS 39
-  - 🇺🇸 VLESS 40
-  - 🇨🇦 VLESS 41
-  - 🇺🇸 VLESS 42
-  - 🇨🇦 VLESS 43
-  - 🇨🇦 VLESS 44
-  - 🇬🇧 VLESS 45
-  - 🇨🇦 VLESS 46
-  - 🇫🇷 VLESS 47
-  - 🇵🇱 VLESS 48
-  - 🇩🇪 VLESS 49
-  - 🇩🇪 VLESS 50
-  - 🌍 VLESS 51
-  - 🌍 VMESS 52
-  - 🌍 VLESS 53
-  - 🌍 VLESS 54
-  - 🌍 VLESS 55
-  - 🌍 VMESS 58
-  - 🌍 VMESS 59
-  - 🌍 VLESS 61
-  - 🌍 VLESS 62
-  - 🌍 VLESS 66
-  - 🌍 VLESS 68
-  - 🌍 VLESS 70
-  - 🌍 VLESS 71
-  - 🌍 VLESS 72
-  - 🌍 VLESS 74
-  - 🌍 VLESS 75
-  - 🌍 VLESS 80
-  - 🌍 VLESS 81
-  - 🌍 VLESS 84
-  - 🌍 VLESS 85
-  - 🌍 VLESS 86
-  - 🌍 VLESS 87
-  - 🌍 VLESS 88
+  - 🇫🇮 VLESS 11
+  - 🇺🇸 VLESS 12
+  - 🇹🇷 VLESS 13
+  - 🇩🇪 VLESS 14
+  - 🇨🇦 VLESS 15
+  - 🇨🇦 VLESS 16
+  - 🇨🇦 VLESS 17
+  - 🇨🇦 VLESS 18
+  - 🇨🇦 VLESS 19
+  - 🇨🇦 VLESS 20
+  - 🇨🇦 VLESS 21
+  - 🇨🇦 VLESS 22
+  - 🇨🇦 VLESS 23
+  - 🇨🇦 VLESS 24
 - name: Auto
   type: url-test
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/EU.png
@@ -992,75 +447,30 @@ proxy-groups:
   tolerance: 200
   hidden: true
   proxies:
-  - 🇳🇱 VLESS 01
-  - 🇨🇦 VLESS 02
-  - 🇩🇪 VLESS 03
-  - 🇩🇪 VLESS 04
-  - 🇩🇪 VLESS 05
-  - 🇳🇱 VLESS 06
-  - 🇩🇪 VLESS 07
+  - 🇺🇸 VLESS 01
+  - 🇩🇪 VLESS 02
+  - 🇬🇧 VLESS 03
+  - 🇨🇦 VLESS 04
+  - 🇬🇧 VLESS 05
+  - 🇨🇦 VLESS 06
+  - 🇨🇦 VLESS 07
   - 🇩🇪 VLESS 08
   - 🇩🇪 VLESS 09
   - 🇩🇪 VLESS 10
-  - 🇩🇪 VLESS 11
-  - 🇨🇦 VLESS 13
-  - 🇨🇦 VLESS 14
-  - 🇧🇪 VLESS 15
-  - 🇬🇧 VLESS 16
-  - 🇹🇷 VLESS 17
-  - 🇳🇱 VLESS 18
-  - 🇩🇪 VLESS 19
-  - 🇩🇪 VLESS 20
-  - 🇩🇪 VLESS 21
-  - 🇱🇻 VLESS 22
-  - 🇫🇷 VLESS 23
-  - 🇫🇷 VLESS 24
-  - 🇨🇦 VLESS 25
-  - 🇩🇪 VLESS 26
-  - 🇷🇺 VMESS 27
-  - 🇩🇪 VLESS 28
-  - 🇩🇪 VLESS 29
-  - 🇩🇪 VLESS 30
-  - 🇩🇪 VLESS 32
-  - 🇩🇪 VLESS 33
-  - 🇩🇪 VLESS 35
-  - 🇨🇦 VLESS 37
-  - 🇺🇸 VLESS 38
-  - 🇺🇸 VLESS 39
-  - 🇺🇸 VLESS 40
-  - 🇨🇦 VLESS 41
-  - 🇺🇸 VLESS 42
-  - 🇨🇦 VLESS 43
-  - 🇨🇦 VLESS 44
-  - 🇬🇧 VLESS 45
-  - 🇨🇦 VLESS 46
-  - 🇫🇷 VLESS 47
-  - 🇵🇱 VLESS 48
-  - 🇩🇪 VLESS 49
-  - 🇩🇪 VLESS 50
-  - 🌍 VLESS 51
-  - 🌍 VMESS 52
-  - 🌍 VLESS 53
-  - 🌍 VLESS 54
-  - 🌍 VLESS 55
-  - 🌍 VMESS 58
-  - 🌍 VMESS 59
-  - 🌍 VLESS 61
-  - 🌍 VLESS 62
-  - 🌍 VLESS 66
-  - 🌍 VLESS 68
-  - 🌍 VLESS 70
-  - 🌍 VLESS 71
-  - 🌍 VLESS 72
-  - 🌍 VLESS 74
-  - 🌍 VLESS 75
-  - 🌍 VLESS 80
-  - 🌍 VLESS 81
-  - 🌍 VLESS 84
-  - 🌍 VLESS 85
-  - 🌍 VLESS 86
-  - 🌍 VLESS 87
-  - 🌍 VLESS 88
+  - 🇫🇮 VLESS 11
+  - 🇺🇸 VLESS 12
+  - 🇹🇷 VLESS 13
+  - 🇩🇪 VLESS 14
+  - 🇨🇦 VLESS 15
+  - 🇨🇦 VLESS 16
+  - 🇨🇦 VLESS 17
+  - 🇨🇦 VLESS 18
+  - 🇨🇦 VLESS 19
+  - 🇨🇦 VLESS 20
+  - 🇨🇦 VLESS 21
+  - 🇨🇦 VLESS 22
+  - 🇨🇦 VLESS 23
+  - 🇨🇦 VLESS 24
 - name: Load Balancer
   type: load-balance
   strategy: consistent-hashing
@@ -1071,75 +481,30 @@ proxy-groups:
   tolerance: 200
   hidden: true
   proxies:
-  - 🇳🇱 VLESS 01
-  - 🇨🇦 VLESS 02
-  - 🇩🇪 VLESS 03
-  - 🇩🇪 VLESS 04
-  - 🇩🇪 VLESS 05
-  - 🇳🇱 VLESS 06
-  - 🇩🇪 VLESS 07
+  - 🇺🇸 VLESS 01
+  - 🇩🇪 VLESS 02
+  - 🇬🇧 VLESS 03
+  - 🇨🇦 VLESS 04
+  - 🇬🇧 VLESS 05
+  - 🇨🇦 VLESS 06
+  - 🇨🇦 VLESS 07
   - 🇩🇪 VLESS 08
   - 🇩🇪 VLESS 09
   - 🇩🇪 VLESS 10
-  - 🇩🇪 VLESS 11
-  - 🇨🇦 VLESS 13
-  - 🇨🇦 VLESS 14
-  - 🇧🇪 VLESS 15
-  - 🇬🇧 VLESS 16
-  - 🇹🇷 VLESS 17
-  - 🇳🇱 VLESS 18
-  - 🇩🇪 VLESS 19
-  - 🇩🇪 VLESS 20
-  - 🇩🇪 VLESS 21
-  - 🇱🇻 VLESS 22
-  - 🇫🇷 VLESS 23
-  - 🇫🇷 VLESS 24
-  - 🇨🇦 VLESS 25
-  - 🇩🇪 VLESS 26
-  - 🇷🇺 VMESS 27
-  - 🇩🇪 VLESS 28
-  - 🇩🇪 VLESS 29
-  - 🇩🇪 VLESS 30
-  - 🇩🇪 VLESS 32
-  - 🇩🇪 VLESS 33
-  - 🇩🇪 VLESS 35
-  - 🇨🇦 VLESS 37
-  - 🇺🇸 VLESS 38
-  - 🇺🇸 VLESS 39
-  - 🇺🇸 VLESS 40
-  - 🇨🇦 VLESS 41
-  - 🇺🇸 VLESS 42
-  - 🇨🇦 VLESS 43
-  - 🇨🇦 VLESS 44
-  - 🇬🇧 VLESS 45
-  - 🇨🇦 VLESS 46
-  - 🇫🇷 VLESS 47
-  - 🇵🇱 VLESS 48
-  - 🇩🇪 VLESS 49
-  - 🇩🇪 VLESS 50
-  - 🌍 VLESS 51
-  - 🌍 VMESS 52
-  - 🌍 VLESS 53
-  - 🌍 VLESS 54
-  - 🌍 VLESS 55
-  - 🌍 VMESS 58
-  - 🌍 VMESS 59
-  - 🌍 VLESS 61
-  - 🌍 VLESS 62
-  - 🌍 VLESS 66
-  - 🌍 VLESS 68
-  - 🌍 VLESS 70
-  - 🌍 VLESS 71
-  - 🌍 VLESS 72
-  - 🌍 VLESS 74
-  - 🌍 VLESS 75
-  - 🌍 VLESS 80
-  - 🌍 VLESS 81
-  - 🌍 VLESS 84
-  - 🌍 VLESS 85
-  - 🌍 VLESS 86
-  - 🌍 VLESS 87
-  - 🌍 VLESS 88
+  - 🇫🇮 VLESS 11
+  - 🇺🇸 VLESS 12
+  - 🇹🇷 VLESS 13
+  - 🇩🇪 VLESS 14
+  - 🇨🇦 VLESS 15
+  - 🇨🇦 VLESS 16
+  - 🇨🇦 VLESS 17
+  - 🇨🇦 VLESS 18
+  - 🇨🇦 VLESS 19
+  - 🇨🇦 VLESS 20
+  - 🇨🇦 VLESS 21
+  - 🇨🇦 VLESS 22
+  - 🇨🇦 VLESS 23
+  - 🇨🇦 VLESS 24
 rule-providers:
   private:
     type: http
