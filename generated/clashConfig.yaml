@@ -57,381 +57,96 @@ tun:
   - any:53
   - tcp://any:53
 proxies:
-- name: 🇩🇪 VLESS 01
+- name: 🇨🇦 VLESS 01
   type: vless
-  server: 91.99.184.135
-  port: 2095
-  uuid: 360ab6ba-7c33-4cd7-add1-9698b9f9205c
+  server: am288.amin-1.ir
+  port: 2082
+  uuid: 3b0c38e2-0bfd-44ce-9e91-89d996202d5d
   udp: true
   tls: false
   skip-cert-verify: true
-  servername: 91.99.184.135
+  servername: am288.amin-1.ir
   network: tcp
-- name: 🇺🇸 VMESS 02
-  type: vmess
-  server: www.speedtest.net
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  udp: true
-  skip-cert-verify: true
-  cipher: auto
-  network: ws
-  tls: true
-  servername: mrvpn294.pocom3am.workers.dev
-  ws-opts:
-    path: /serkat.org/linkvws
-    headers:
-      Host: mrvpn294.pocom3am.workers.dev
-- name: 🇫🇷 VLESS 03
+- name: 🇮🇹 VLESS 02
   type: vless
-  server: 185.234.64.143
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 185.234.64.143
-  network: grpc
-  grpc-opts: {}
-- name: 🇺🇸 VLESS 04
-  type: vless
-  server: best.cdniran.info
+  server: 95.141.37.73
   port: 443
-  uuid: e999db7a-1b17-4da6-bc37-c9fa24af2e93
+  uuid: 1820765e-c193-4ae1-a96c-f2c476becb4b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: smart.trevanda.info
-  network: ws
-  alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
-    headers:
-      Host: smart.trevanda.info
-- name: 🇹🇷 VLESS 05
-  type: vless
-  server: 185.234.66.106
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 185.234.66.106
-  network: grpc
-  grpc-opts: {}
-- name: 🇹🇷 VLESS 07
-  type: vless
-  server: turkey.huqpmfood.ir
-  port: 1331
-  uuid: 1d66467e-fd2c-4321-92cc-79465ce2c25c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stackoverflow.com
-  network: tcp
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: m8Tuf48MMB9ILy--1nfwGRPJOEbgHOdylaLS_JQ66DM
-    short-id: 89345bea5809f46d
-- name: 🇫🇷 VLESS 08
-  type: vless
-  server: 195.42.233.89
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 195.42.233.89
-  network: grpc
-  grpc-opts: {}
-- name: 🇫🇷 VLESS 09
-  type: vless
-  server: 185.231.205.149
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 185.231.205.149
-  network: grpc
-  grpc-opts: {}
-- name: 🇩🇪 VLESS 10
-  type: vless
-  server: 193.24.209.127
-  port: 36898
-  uuid: 7453db5a-ca2c-4d60-a106-1a6618fd856d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 193.24.209.127
-  network: tcp
-- name: 🇬🇧 VLESS 12
-  type: vless
-  server: 91.228.10.89
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 91.228.10.89
-  network: grpc
-  grpc-opts: {}
-- name: 🇳🇱 VLESS 13
-  type: vless
-  server: 77.91.123.207
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 77.91.123.207
-  network: grpc
-  grpc-opts: {}
-- name: 🇩🇪 VLESS 14
-  type: vless
-  server: 142.93.168.131
-  port: 443
-  uuid: 7c4d2229-fa3a-4628-8abf-0728f13edac1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 142.93.168.131
-  network: grpc
-  grpc-opts: {}
-- name: 🇩🇪 VLESS 15
-  type: vless
-  server: a-lf-0.okamii.ir
-  port: 2095
-  uuid: 360ab6ba-7c33-4cd7-add1-9698b9f9205c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: a-lf-0.okamii.ir
-  network: tcp
-- name: 🇺🇸 VLESS 16
-  type: vless
-  server: 88.218.93.159
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 88.218.93.159
-  network: grpc
-  grpc-opts: {}
-- name: 🇫🇷 VLESS 18
-  type: vless
-  server: 185.234.64.101
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 185.234.64.101
-  network: grpc
-  grpc-opts: {}
-- name: 🇳🇱 VLESS 19
-  type: vless
-  server: 45.12.142.96
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 45.12.142.96
-  network: grpc
-  grpc-opts: {}
-- name: 🇳🇱 VLESS 20
-  type: vless
-  server: 45.14.244.44
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 45.14.244.44
-  network: grpc
-  grpc-opts: {}
-- name: 🇵🇱 VLESS 21
-  type: vless
-  server: 77.83.246.235
-  port: 443
-  uuid: 37e7881f-ff59-4858-83cd-c6b4b03cba4a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: google.com
+  servername: aws.com
   network: tcp
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 8B1aKLm3jBQ_yf3aUvdagWwxkXHrlRyrzdQVoq17yXI
-    short-id: 698295d180
-- name: 🇫🇷 VLESS 22
+    public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+- name: 🇬🇧 VLESS 03
   type: vless
-  server: 194.4.49.219
+  server: 45.140.167.209
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   udp: true
   tls: false
   skip-cert-verify: true
-  servername: 194.4.49.219
+  servername: 45.140.167.209
   network: grpc
   grpc-opts: {}
-- name: 🇪🇸 VLESS 24
+- name: 🇳🇱 VLESS 04
   type: vless
-  server: 45.12.150.97
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 45.12.150.97
-  network: grpc
-  grpc-opts: {}
-- name: 🇳🇱 VLESS 25
-  type: vless
-  server: 85.208.110.217
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 85.208.110.217
-  network: grpc
-  grpc-opts: {}
-- name: 🇸🇪 VLESS 26
-  type: vless
-  server: 185.36.145.171
-  port: 3030
-  uuid: 0027ba99-cffd-477f-915f-9a80ecc857ae
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 185.36.145.171
-  network: tcp
-- name: 🇳🇱 VLESS 28
-  type: vless
-  server: 193.227.99.113
-  port: 2053
-  uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
+  server: 166.1.131.6
+  port: 443
+  uuid: 40730d97-ffa7-1108-2c53-761516eb5fda
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nkGgd-87836.phoenixappdatad.uk
-  network: ws
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: nkGgd-87836.phoenixappdatad.uk
-- name: 🇬🇧 VLESS 32
-  type: vless
-  server: 146.19.230.247
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 146.19.230.247
-  network: grpc
-  grpc-opts: {}
-- name: 🇺🇸 VLESS 33
-  type: vless
-  server: www.speedtest.net
-  port: 2082
-  uuid: 0413976d-7077-42c2-d40c-7e4c735b2095
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: www.speedtest.net
-  network: tcp
-- name: 🇱🇹 VLESS 35
-  type: vless
-  server: 94.131.14.48
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 94.131.14.48
-  network: grpc
-  grpc-opts: {}
-- name: 🇫🇷 VLESS 36
-  type: vless
-  server: 194.4.49.40
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 194.4.49.40
-  network: grpc
-  grpc-opts: {}
-- name: 🇳🇱 VLESS 38
-  type: vless
-  server: 85.208.110.38
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 85.208.110.38
-  network: grpc
-  grpc-opts: {}
-- name: 🇫🇷 VLESS 39
-  type: vless
-  server: 185.242.87.72
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 185.242.87.72
-  network: grpc
-  grpc-opts: {}
-- name: 🇩🇪 VLESS 40
-  type: vless
-  server: v2ngnet.huqpmfood.ir
-  port: 4455
-  uuid: 6c95605e-b57d-402f-86ab-289fe7a73fb5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stackoverflow.com
+  servername: speed.cloudflare.com
   network: tcp
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: l_LBBQyt6du7ZgBadETGtx8zLgUd36-4mZVCSI9qqwA
-    short-id: 077dc29a23d311f2
-- name: 🇺🇸 VLESS 41
+    public-key: _KiM4lu8Em0mJFmY8t2XRYGL-H2jbCtfKaFB0Io6JCE
+- name: 🇩🇪 VLESS 05
   type: vless
-  server: 185.236.232.82
-  port: 80
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  server: refreshcloud-ger.parsgit.com
+  port: 4040
+  uuid: ba29c23c-2174-46c2-9c99-65cacc2237df
   udp: true
   tls: false
   skip-cert-verify: true
-  servername: 185.236.232.82
-  network: grpc
-  grpc-opts: {}
-- name: 🇺🇸 TROJAN 42
-  type: trojan
-  server: 23.186.200.109
-  port: 11013
-  password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
+  servername: refreshcloud-ger.parsgit.com
+  network: ws
+  ws-opts:
+    path: /admin?ed=1024--skypro_vpn--skypro_vpn--skypro_vpn--skypro_vpn--skypro_vpn--skypro_vpn--skypro_vpn--skypro_vpn--
+    headers:
+      Host: refreshcloud-ger.parsgit.com.
+- name: 🇦🇪 VLESS 07
+  type: vless
+  server: 45.88.13.10
+  port: 443
+  uuid: 40730d97-ffa7-1108-2c53-761516eb5fda
   udp: true
+  tls: true
   skip-cert-verify: true
-  sni: wus03.weyaf9sdoh2h.space
-- name: 🇺🇸 VLESS 43
+  servername: speed.cloudflare.com
+  network: tcp
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Tv-cNH4ADnhrcIc_JIHdTCz2PJ3b4jkmLNAJ4OVKuzY
+- name: 🇫🇮 VLESS 08
+  type: vless
+  server: 65.109.216.23
+  port: 15355
+  uuid: 1a0e38e2-6276-4c36-bc00-7d2ccd6aea4d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: 65.109.216.23
+  network: ws
+  ws-opts:
+    path: /@armanstore2-Telegram----@armanstore2-Telegram----@armanstore2-Telegram----@armanstore2-Telegram----@armanstore2-Telegram----@armanstore2-Telegram----@armanstore2-Telegram----
+- name: 🇺🇸 VLESS 09
   type: vless
   server: 185.236.232.118
   port: 80
@@ -442,175 +157,104 @@ proxies:
   servername: 185.236.232.118
   network: grpc
   grpc-opts: {}
-- name: 🇫🇷 VLESS 45
+- name: 🇫🇷 VLESS 10
   type: vless
-  server: 185.242.87.119
+  server: 185.231.205.176
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   udp: true
   tls: false
   skip-cert-verify: true
-  servername: 185.242.87.119
+  servername: 185.231.205.176
   network: grpc
   grpc-opts: {}
-- name: 🇹🇷 VLESS 46
+- name: 🇺🇸 VLESS 11
   type: vless
-  server: 185.234.66.88
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  server: 185.236.232.159
+  port: 80
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
   udp: true
   tls: false
   skip-cert-verify: true
-  servername: 185.234.66.88
+  servername: 185.236.232.159
   network: grpc
   grpc-opts: {}
-- name: 🇬🇧 VLESS 47
+- name: 🇩🇪 VLESS 12
   type: vless
-  server: m33a.vip784.com
-  port: 33801
-  uuid: ad069756-c14b-4443-87af-4a503c5c08f5
+  server: 91.98.233.176
+  port: 24199
+  uuid: f3be6c78-46cd-4409-8ed3-8d36bef0f86c
   udp: true
   tls: false
   skip-cert-verify: true
-  servername: m33a.vip784.com
+  servername: 91.98.233.176
   network: tcp
-- name: 🇺🇸 TROJAN 48
-  type: trojan
-  server: 23.186.200.111
-  port: 11015
-  password: 898e1dca-14b2-4371-abc8-1b9f839bff6d
-  udp: true
-  skip-cert-verify: true
-  sni: wus05.weyaf9sdoh2h.space
-- name: 🇫🇷 VLESS 50
+- name: 🇫🇮 VLESS 13
   type: vless
-  server: 185.234.64.105
+  server: 171.22.114.244
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   udp: true
   tls: false
   skip-cert-verify: true
-  servername: 185.234.64.105
+  servername: 171.22.114.244
   network: grpc
   grpc-opts: {}
-- name: 🇫🇷 VLESS 54
+- name: 🇫🇷 VLESS 15
   type: vless
-  server: 95.164.6.156
+  server: 94.131.118.25
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   udp: true
   tls: false
   skip-cert-verify: true
-  servername: 95.164.6.156
+  servername: 94.131.118.25
   network: grpc
   grpc-opts: {}
-- name: 🇳🇱 VLESS 55
+- name: 🇮🇸 VLESS 16
   type: vless
-  server: 85.208.110.41
+  server: 89.221.224.216
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   udp: true
   tls: false
   skip-cert-verify: true
-  servername: 85.208.110.41
+  servername: 89.221.224.216
   network: grpc
   grpc-opts: {}
-- name: 🇫🇷 VLESS 56
+- name: 🇬🇧 VLESS 17
   type: vless
-  server: 195.42.233.91
+  server: 94.131.122.221
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   udp: true
   tls: false
   skip-cert-verify: true
-  servername: 195.42.233.91
+  servername: 94.131.122.221
   network: grpc
   grpc-opts: {}
-- name: 🇨🇦 VLESS 58
+- name: 🇫🇮 VLESS 18
   type: vless
-  server: m15a.vip784.com
-  port: 33801
-  uuid: d36f457f-17a9-4891-a113-322ec6792917
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: m15a.vip784.com
-  network: tcp
-- name: 🇫🇷 VLESS 63
-  type: vless
-  server: 185.242.87.162
-  port: 443
-  uuid: 35b0de8b-b156-43ff-a0e6-59f1018f7adb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 185.242.87.162
-  network: ws
-  client-fingerprint: chrome
-  ws-opts:
-    path: /holhclws
-- name: 🇫🇷 VLESS 64
-  type: vless
-  server: 86.104.74.177
+  server: 171.22.114.194
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   udp: true
   tls: false
   skip-cert-verify: true
-  servername: 86.104.74.177
+  servername: 171.22.114.194
   network: grpc
   grpc-opts: {}
-- name: 🇫🇷 VLESS 65
+- name: 🇫🇷 VLESS 19
   type: vless
-  server: 185.242.87.241
+  server: 185.231.205.164
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   udp: true
   tls: false
   skip-cert-verify: true
-  servername: 185.242.87.241
+  servername: 185.231.205.164
   network: grpc
   grpc-opts: {}
-- name: 🇩🇪 VLESS 67
-  type: vless
-  server: 90.156.228.109
-  port: 8443
-  uuid: 3a4524bb-5d17-4c09-b523-6ab1e1a41d81
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.ya.ru
-  network: tcp
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: blSlAMMTv5UdIZiQd6VtBlS7kfZJ9xpw9H95Ouohbxs
-    short-id: 4bb9dbdad476124c
-- name: 🌍 VLESS 68
-  type: vless
-  server: 185.234.66.100
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  servername: 185.234.66.100
-  network: grpc
-  grpc-opts: {}
-- name: 🌍 VLESS 69
-  type: vless
-  server: 193.233.19.242
-  port: 6060
-  uuid: cb6e6e21-7bc1-4de6-b961-a78893935436
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: book.smnsoft.com
-  network: tcp
-  alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
 proxy-groups:
 - name: Smart VPN
   type: select
@@ -619,54 +263,23 @@ proxy-groups:
   proxies:
   - Auto
   - Load Balancer
-  - 🇩🇪 VLESS 01
-  - 🇺🇸 VMESS 02
-  - 🇫🇷 VLESS 03
-  - 🇺🇸 VLESS 04
-  - 🇹🇷 VLESS 05
-  - 🇹🇷 VLESS 07
-  - 🇫🇷 VLESS 08
-  - 🇫🇷 VLESS 09
-  - 🇩🇪 VLESS 10
-  - 🇬🇧 VLESS 12
-  - 🇳🇱 VLESS 13
-  - 🇩🇪 VLESS 14
-  - 🇩🇪 VLESS 15
-  - 🇺🇸 VLESS 16
-  - 🇫🇷 VLESS 18
-  - 🇳🇱 VLESS 19
-  - 🇳🇱 VLESS 20
-  - 🇵🇱 VLESS 21
-  - 🇫🇷 VLESS 22
-  - 🇪🇸 VLESS 24
-  - 🇳🇱 VLESS 25
-  - 🇸🇪 VLESS 26
-  - 🇳🇱 VLESS 28
-  - 🇬🇧 VLESS 32
-  - 🇺🇸 VLESS 33
-  - 🇱🇹 VLESS 35
-  - 🇫🇷 VLESS 36
-  - 🇳🇱 VLESS 38
-  - 🇫🇷 VLESS 39
-  - 🇩🇪 VLESS 40
-  - 🇺🇸 VLESS 41
-  - 🇺🇸 TROJAN 42
-  - 🇺🇸 VLESS 43
-  - 🇫🇷 VLESS 45
-  - 🇹🇷 VLESS 46
-  - 🇬🇧 VLESS 47
-  - 🇺🇸 TROJAN 48
-  - 🇫🇷 VLESS 50
-  - 🇫🇷 VLESS 54
-  - 🇳🇱 VLESS 55
-  - 🇫🇷 VLESS 56
-  - 🇨🇦 VLESS 58
-  - 🇫🇷 VLESS 63
-  - 🇫🇷 VLESS 64
-  - 🇫🇷 VLESS 65
-  - 🇩🇪 VLESS 67
-  - 🌍 VLESS 68
-  - 🌍 VLESS 69
+  - 🇨🇦 VLESS 01
+  - 🇮🇹 VLESS 02
+  - 🇬🇧 VLESS 03
+  - 🇳🇱 VLESS 04
+  - 🇩🇪 VLESS 05
+  - 🇦🇪 VLESS 07
+  - 🇫🇮 VLESS 08
+  - 🇺🇸 VLESS 09
+  - 🇫🇷 VLESS 10
+  - 🇺🇸 VLESS 11
+  - 🇩🇪 VLESS 12
+  - 🇫🇮 VLESS 13
+  - 🇫🇷 VLESS 15
+  - 🇮🇸 VLESS 16
+  - 🇬🇧 VLESS 17
+  - 🇫🇮 VLESS 18
+  - 🇫🇷 VLESS 19
 - name: Auto
   type: url-test
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/EU.png
@@ -676,54 +289,23 @@ proxy-groups:
   tolerance: 200
   hidden: true
   proxies:
-  - 🇩🇪 VLESS 01
-  - 🇺🇸 VMESS 02
-  - 🇫🇷 VLESS 03
-  - 🇺🇸 VLESS 04
-  - 🇹🇷 VLESS 05
-  - 🇹🇷 VLESS 07
-  - 🇫🇷 VLESS 08
-  - 🇫🇷 VLESS 09
-  - 🇩🇪 VLESS 10
-  - 🇬🇧 VLESS 12
-  - 🇳🇱 VLESS 13
-  - 🇩🇪 VLESS 14
-  - 🇩🇪 VLESS 15
-  - 🇺🇸 VLESS 16
-  - 🇫🇷 VLESS 18
-  - 🇳🇱 VLESS 19
-  - 🇳🇱 VLESS 20
-  - 🇵🇱 VLESS 21
-  - 🇫🇷 VLESS 22
-  - 🇪🇸 VLESS 24
-  - 🇳🇱 VLESS 25
-  - 🇸🇪 VLESS 26
-  - 🇳🇱 VLESS 28
-  - 🇬🇧 VLESS 32
-  - 🇺🇸 VLESS 33
-  - 🇱🇹 VLESS 35
-  - 🇫🇷 VLESS 36
-  - 🇳🇱 VLESS 38
-  - 🇫🇷 VLESS 39
-  - 🇩🇪 VLESS 40
-  - 🇺🇸 VLESS 41
-  - 🇺🇸 TROJAN 42
-  - 🇺🇸 VLESS 43
-  - 🇫🇷 VLESS 45
-  - 🇹🇷 VLESS 46
-  - 🇬🇧 VLESS 47
-  - 🇺🇸 TROJAN 48
-  - 🇫🇷 VLESS 50
-  - 🇫🇷 VLESS 54
-  - 🇳🇱 VLESS 55
-  - 🇫🇷 VLESS 56
-  - 🇨🇦 VLESS 58
-  - 🇫🇷 VLESS 63
-  - 🇫🇷 VLESS 64
-  - 🇫🇷 VLESS 65
-  - 🇩🇪 VLESS 67
-  - 🌍 VLESS 68
-  - 🌍 VLESS 69
+  - 🇨🇦 VLESS 01
+  - 🇮🇹 VLESS 02
+  - 🇬🇧 VLESS 03
+  - 🇳🇱 VLESS 04
+  - 🇩🇪 VLESS 05
+  - 🇦🇪 VLESS 07
+  - 🇫🇮 VLESS 08
+  - 🇺🇸 VLESS 09
+  - 🇫🇷 VLESS 10
+  - 🇺🇸 VLESS 11
+  - 🇩🇪 VLESS 12
+  - 🇫🇮 VLESS 13
+  - 🇫🇷 VLESS 15
+  - 🇮🇸 VLESS 16
+  - 🇬🇧 VLESS 17
+  - 🇫🇮 VLESS 18
+  - 🇫🇷 VLESS 19
 - name: Load Balancer
   type: load-balance
   strategy: consistent-hashing
@@ -734,54 +316,23 @@ proxy-groups:
   tolerance: 200
   hidden: true
   proxies:
-  - 🇩🇪 VLESS 01
-  - 🇺🇸 VMESS 02
-  - 🇫🇷 VLESS 03
-  - 🇺🇸 VLESS 04
-  - 🇹🇷 VLESS 05
-  - 🇹🇷 VLESS 07
-  - 🇫🇷 VLESS 08
-  - 🇫🇷 VLESS 09
-  - 🇩🇪 VLESS 10
-  - 🇬🇧 VLESS 12
-  - 🇳🇱 VLESS 13
-  - 🇩🇪 VLESS 14
-  - 🇩🇪 VLESS 15
-  - 🇺🇸 VLESS 16
-  - 🇫🇷 VLESS 18
-  - 🇳🇱 VLESS 19
-  - 🇳🇱 VLESS 20
-  - 🇵🇱 VLESS 21
-  - 🇫🇷 VLESS 22
-  - 🇪🇸 VLESS 24
-  - 🇳🇱 VLESS 25
-  - 🇸🇪 VLESS 26
-  - 🇳🇱 VLESS 28
-  - 🇬🇧 VLESS 32
-  - 🇺🇸 VLESS 33
-  - 🇱🇹 VLESS 35
-  - 🇫🇷 VLESS 36
-  - 🇳🇱 VLESS 38
-  - 🇫🇷 VLESS 39
-  - 🇩🇪 VLESS 40
-  - 🇺🇸 VLESS 41
-  - 🇺🇸 TROJAN 42
-  - 🇺🇸 VLESS 43
-  - 🇫🇷 VLESS 45
-  - 🇹🇷 VLESS 46
-  - 🇬🇧 VLESS 47
-  - 🇺🇸 TROJAN 48
-  - 🇫🇷 VLESS 50
-  - 🇫🇷 VLESS 54
-  - 🇳🇱 VLESS 55
-  - 🇫🇷 VLESS 56
-  - 🇨🇦 VLESS 58
-  - 🇫🇷 VLESS 63
-  - 🇫🇷 VLESS 64
-  - 🇫🇷 VLESS 65
-  - 🇩🇪 VLESS 67
-  - 🌍 VLESS 68
-  - 🌍 VLESS 69
+  - 🇨🇦 VLESS 01
+  - 🇮🇹 VLESS 02
+  - 🇬🇧 VLESS 03
+  - 🇳🇱 VLESS 04
+  - 🇩🇪 VLESS 05
+  - 🇦🇪 VLESS 07
+  - 🇫🇮 VLESS 08
+  - 🇺🇸 VLESS 09
+  - 🇫🇷 VLESS 10
+  - 🇺🇸 VLESS 11
+  - 🇩🇪 VLESS 12
+  - 🇫🇮 VLESS 13
+  - 🇫🇷 VLESS 15
+  - 🇮🇸 VLESS 16
+  - 🇬🇧 VLESS 17
+  - 🇫🇮 VLESS 18
+  - 🇫🇷 VLESS 19
 rule-providers:
   private:
     type: http
