@@ -81,6 +81,205 @@ proxies:
   udp: true
   skip-cert-verify: true
   sni: www.nintendogames.net
+- name: 🇨🇦 VLESS 03
+  type: vless
+  server: brenna.ns.cloudflare.com
+  port: 443
+  uuid: 1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: terazhedi.info
+  network: ws
+  ws-opts:
+    path: /sghiyws
+    headers:
+      Host: terazhedi.info
+- name: 🇩🇪 VLESS 04
+  type: vless
+  server: m95a.vip784.com
+  port: 33801
+  uuid: 7d3bb6bd-8122-4cce-ba4a-2f8df0bcd816
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: m95a.vip784.com
+  network: tcp
+- name: 🇷🇺 VLESS 05
+  type: vless
+  server: 217.16.24.170
+  port: 443
+  uuid: a91e64f0-9295-499d-bf4a-661ad99d4938
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: api-maps.yandex.ru
+  network: tcp
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 8OsJx6xuHcpL_5e1w0U4bMBa-icevDgvvzNwPwZbORQ
+    short-id: 5540e44a53c3d01c
+- name: 🇨🇦 VLESS 06
+  type: vless
+  server: 108.162.195.45
+  port: 443
+  uuid: 7270612b-49f6-4b04-999c-34d8263da767
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: picassoo.info
+  network: ws
+  client-fingerprint: chrome
+  ws-opts:
+    path: /aymdlws
+    headers:
+      Host: picassoo.info
+- name: 🇨🇦 VLESS 07
+  type: vless
+  server: 172.64.34.176
+  port: 443
+  uuid: 1b2c91ab-f6c9-42f8-b2c6-8de0ac133d63
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: terazhedi.info
+  network: ws
+  ws-opts:
+    path: /sghiyws
+    headers:
+      Host: terazhedi.info
+- name: 🇨🇦 VLESS 08
+  type: vless
+  server: cosmin.ns.cloudflare.com
+  port: 443
+  uuid: 7270612b-49f6-4b04-999c-34d8263da767
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: picassoo.info
+  network: ws
+  ws-opts:
+    path: /aymdlws
+    headers:
+      Host: picassoo.info
+- name: 🇩🇪 VMESS 09
+  type: vmess
+  server: 129.212.194.164
+  port: 7443
+  uuid: 5c6d4107-464b-40f1-b356-de21ed1f0ced
+  alterId: 0
+  udp: true
+  skip-cert-verify: true
+  cipher: none
+  network: tcp
+- name: 🇩🇪 VMESS 10
+  type: vmess
+  server: a.confignor.site
+  port: 7443
+  uuid: 1299fd91-90b5-41b7-b820-556f33deab0b
+  alterId: 0
+  udp: true
+  skip-cert-verify: true
+  cipher: none
+  network: tcp
+- name: 🇫🇮 VLESS 15
+  type: vless
+  server: helsinki.fonixapp.org
+  port: 2083
+  uuid: 2825bed8-db26-4722-81db-0f572f19dac5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: clients4.google.com
+  network: tcp
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 0ynmhxgUxTCCEhdgYsH1-_90sX5jztkAwUrarbruPS8
+    short-id: 8c
+- name: 🇺🇸 VLESS 16
+  type: vless
+  server: deu711.deulucker.org
+  port: 444
+  uuid: 33676069-bc5a-443c-bb64-14a215544f2b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: deu711.deulucker.org
+  network: tcp
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+- name: 🇷🇺 VLESS 17
+  type: vless
+  server: us01-vlr01-gmn03.vpnvezdehod.net
+  port: 443
+  uuid: 2ca07504-c06a-41a4-b26b-99807a7d24cf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hls-svod.itunes.apple.com
+  network: tcp
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 48720c
+- name: 🇷🇺 VLESS 18
+  type: vless
+  server: 51.250.24.245
+  port: 4249
+  uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: api-maps.yandex.ru
+  network: tcp
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+- name: 🇨🇦 VLESS 19
+  type: vless
+  server: clyde.ns.cloudflare.com
+  port: 443
+  uuid: 02e46039-200d-4ae4-ac90-b0d619f72034
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: redlabell.info
+  network: ws
+  ws-opts:
+    path: /aafeuws
+    headers:
+      Host: redlabell.info
+- name: 🇷🇺 VLESS 20
+  type: vless
+  server: 185.234.59.74
+  port: 8443
+  uuid: 2ca07504-c06a-41a4-b26b-99807a7d24cf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: stats.vk-portal.net
+  network: tcp
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: e499f276e7bd6420
+- name: 🇫🇮 VLESS 21
+  type: vless
+  server: m59a.vip784.com
+  port: 33801
+  uuid: f8a88a3f-1cca-4f93-ad79-4ccc1714c1c2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  servername: m59a.vip784.com
+  network: tcp
 proxy-groups:
 - name: Smart VPN
   type: select
@@ -91,6 +290,21 @@ proxy-groups:
   - Load Balancer
   - 🇰🇷 VMESS 01
   - 🇯🇵 TROJAN 02
+  - 🇨🇦 VLESS 03
+  - 🇩🇪 VLESS 04
+  - 🇷🇺 VLESS 05
+  - 🇨🇦 VLESS 06
+  - 🇨🇦 VLESS 07
+  - 🇨🇦 VLESS 08
+  - 🇩🇪 VMESS 09
+  - 🇩🇪 VMESS 10
+  - 🇫🇮 VLESS 15
+  - 🇺🇸 VLESS 16
+  - 🇷🇺 VLESS 17
+  - 🇷🇺 VLESS 18
+  - 🇨🇦 VLESS 19
+  - 🇷🇺 VLESS 20
+  - 🇫🇮 VLESS 21
 - name: Auto
   type: url-test
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/EU.png
@@ -102,6 +316,21 @@ proxy-groups:
   proxies:
   - 🇰🇷 VMESS 01
   - 🇯🇵 TROJAN 02
+  - 🇨🇦 VLESS 03
+  - 🇩🇪 VLESS 04
+  - 🇷🇺 VLESS 05
+  - 🇨🇦 VLESS 06
+  - 🇨🇦 VLESS 07
+  - 🇨🇦 VLESS 08
+  - 🇩🇪 VMESS 09
+  - 🇩🇪 VMESS 10
+  - 🇫🇮 VLESS 15
+  - 🇺🇸 VLESS 16
+  - 🇷🇺 VLESS 17
+  - 🇷🇺 VLESS 18
+  - 🇨🇦 VLESS 19
+  - 🇷🇺 VLESS 20
+  - 🇫🇮 VLESS 21
 - name: Load Balancer
   type: load-balance
   strategy: consistent-hashing
@@ -114,6 +343,21 @@ proxy-groups:
   proxies:
   - 🇰🇷 VMESS 01
   - 🇯🇵 TROJAN 02
+  - 🇨🇦 VLESS 03
+  - 🇩🇪 VLESS 04
+  - 🇷🇺 VLESS 05
+  - 🇨🇦 VLESS 06
+  - 🇨🇦 VLESS 07
+  - 🇨🇦 VLESS 08
+  - 🇩🇪 VMESS 09
+  - 🇩🇪 VMESS 10
+  - 🇫🇮 VLESS 15
+  - 🇺🇸 VLESS 16
+  - 🇷🇺 VLESS 17
+  - 🇷🇺 VLESS 18
+  - 🇨🇦 VLESS 19
+  - 🇷🇺 VLESS 20
+  - 🇫🇮 VLESS 21
 rule-providers:
   private:
     type: http
